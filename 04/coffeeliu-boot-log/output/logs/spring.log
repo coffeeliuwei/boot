@@ -1,21 +1,6 @@
-2020/04/14 === [main] == INFO  == com.coffee.CoffeeliuBootLogApplication == Starting CoffeeliuBootLogApplication on JPXUIPMY11S3CE7 with PID 14920 (D:\springboot2020\coffeeliu-boot\04\coffeeliu-boot-log\target\classes started by Administrator in D:\springboot2020\coffeeliu-boot\04\coffeeliu-boot-log)
-2020/04/14 === [main] == DEBUG == com.coffee.CoffeeliuBootLogApplication == Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
-2020/04/14 === [main] == INFO  == com.coffee.CoffeeliuBootLogApplication == No active profile set, falling back to default profiles: default
-2020/04/14 === [main] == INFO  == o.s.boot.web.embedded.tomcat.TomcatWebServer == Tomcat initialized with port(s): 8080 (http)
-2020/04/14 === [main] == INFO  == org.apache.catalina.core.StandardService == Starting service [Tomcat]
-2020/04/14 === [main] == INFO  == org.apache.catalina.core.StandardEngine == Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020/04/14 === [main] == INFO  == o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] == Initializing Spring embedded WebApplicationContext
-2020/04/14 === [main] == INFO  == org.springframework.web.context.ContextLoader == Root WebApplicationContext: initialization completed in 619 ms
-2020/04/14 === [main] == INFO  == o.s.scheduling.concurrent.ThreadPoolTaskExecutor == Initializing ExecutorService 'applicationTaskExecutor'
-2020/04/14 === [main] == INFO  == o.s.boot.web.embedded.tomcat.TomcatWebServer == Tomcat started on port(s): 8080 (http) with context path ''
-2020/04/14 === [main] == INFO  == com.coffee.CoffeeliuBootLogApplication == Started CoffeeliuBootLogApplication in 1.172 seconds (JVM running for 1.821)
-2020/04/14 === [http-nio-8080-exec-1] == INFO  == o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] == Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020/04/14 === [http-nio-8080-exec-1] == INFO  == org.springframework.web.servlet.DispatcherServlet == Initializing Servlet 'dispatcherServlet'
-2020/04/14 === [http-nio-8080-exec-1] == INFO  == org.springframework.web.servlet.DispatcherServlet == Completed initialization in 6 ms
-2020/04/14 === [http-nio-8080-exec-1] == TRACE == com.coffee.controller.configcontroller == ------------trace-----------
-2020/04/14 === [http-nio-8080-exec-1] == DEBUG == com.coffee.controller.configcontroller == ------------debug-----------
-2020/04/14 === [http-nio-8080-exec-1] == INFO  == com.coffee.controller.configcontroller == ------------info-----------
-2020/04/14 === [http-nio-8080-exec-1] == WARN  == com.coffee.controller.configcontroller == ------------warn-----------
-2020/04/14 === [http-nio-8080-exec-1] == ERROR == com.coffee.controller.configcontroller == ------------error-----------
-2020/04/14 === [RMI TCP Connection(3)-127.0.0.1] == INFO  == o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin == Application shutdown requested.
-2020/04/14 === [RMI TCP Connection(3)-127.0.0.1] == INFO  == o.s.scheduling.concurrent.ThreadPoolTaskExecutor == Shutting down ExecutorService 'applicationTaskExecutor'
+2020/04/15 === [main] == INFO  == com.coffee.CoffeeliuBootLogApplicationTests == Starting CoffeeliuBootLogApplicationTests on JPXUIPMY11S3CE7 with PID 14588 (started by Administrator in D:\springboot2020\coffeeliu-boot\04\coffeeliu-boot-log)
+2020/04/15 === [main] == DEBUG == com.coffee.CoffeeliuBootLogApplicationTests == Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020/04/15 === [main] == INFO  == com.coffee.CoffeeliuBootLogApplicationTests == No active profile set, falling back to default profiles: default
+2020/04/15 === [main] == INFO  == o.s.scheduling.concurrent.ThreadPoolTaskExecutor == Initializing ExecutorService 'applicationTaskExecutor'
+2020/04/15 === [main] == INFO  == com.coffee.CoffeeliuBootLogApplicationTests == Started CoffeeliuBootLogApplicationTests in 1.549 seconds (JVM running for 2.415)
+2020/04/15 === [SpringContextShutdownHook] == INFO  == o.s.scheduling.concurrent.ThreadPoolTaskExecutor == Shutting down ExecutorService 'applicationTaskExecutor'
