@@ -8,7 +8,8 @@ sudo apt-get install erlang-nox
 sudo apt-get update
 sudo apt-get install rabbitmq-server
 ```
-3. 启动、停止、重启、状态rabbitMq命令  
+3. 启动、停止、重启、状态rabbitMq命令
+
 ```
 sudo rabbitmq-server start
  
@@ -19,6 +20,7 @@ sudo rabbitmq-server restart
 sudo rabbitmqctl status
 ```
 4. 防火墙设置
+
 ```
 sudo ufw enable
 sudo ufw allow 80
@@ -30,34 +32,43 @@ sudo ufw allow 4369
 sudo ufw reload
 ```
 5. 添加管理员
+
+
 ```
 sudo rabbitmqctl add_user  admin  admin 
 sudo rabbitmqctl set_user_tags admin administrator
 sudo rabbitmqctl  set_permissions -p / admin '.*' '.*' '.*'
 ```
+
 6. 安装Web管理界面插件
+
 ```
 rabbitmq-plugins enable rabbitmq_management
 rabbitmqctl list_users
 // http://54.180.65.30:15672/#/
 // http://3.132.215.12:15672/#/
 ```
+
 # centos上安装RabbitMQ步骤
 ### 准备
+
 ```
 yum update
 yum install epel-release
 yum install gcc gcc-c++ glibc-devel make ncurses-devel openssl-devel autoconf java-1.8.0-openjdk-devel git wget wxBase.x86_64
-```
+```  
 ### 安装erlang
+
 ```
 yum install -y erlang
 ```
 ### 安装rabbitmq
+
 ```
 wget https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.7.15/rabbitmq-server-3.7.15-1.el7.noarch.rpm
 ```
 ### 导入秘钥
+
 ```
 rpm --import https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
 ```
