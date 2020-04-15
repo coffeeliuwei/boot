@@ -7,4 +7,5 @@
   * [第四讲：日志配置](/04/coffeeliu-boot-log/README.md)
   * [第五讲：RabbitMQ攻略]  
       * [RabbitMQ服务器配置](/05/RabbitMQInstall.md)
+	  * [RabbitMQ初识](/05/rabbit-mq-hello/README.md)
   * [第六讲：。。。。]()
