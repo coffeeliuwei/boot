@@ -14,6 +14,20 @@
 ### 分析2：springboot的日志搭配
 springboot2.0默认采用了slf4f+logback的日志搭配。  
 在开发过程中，我们都是采用了slf4j的api去记录日志，底层的实现就是根据配置logback或log4j日志框架。
+## 日志输出
+```
+private static final Logger log = LoggerFactory.getLogger(configcontroller.class);
+
+	 @GetMapping("/log")
+	    public void log(){
+	        log.trace("------------trace-----------");
+	        log.debug("------------debug-----------");
+	        log.info("------------info-----------");
+	        log.warn("------------warn-----------");
+	        log.error("------------error-----------");
+
+	    }
+```
 
 ##为什么控制台的日志只输出了 info  warn error?
 因为springboot默认是info级别的  
