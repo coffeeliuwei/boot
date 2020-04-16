@@ -27,6 +27,8 @@
 <module>03/coffeeliu-boot-config-yml</module>
 <module>04/coffeeliu-boot-log</module>
 	<module>05/rabbit-mq-hello</module>
+	<module>05/direct/rabbit-mq-direct-consumer</module>
+	<module>05/direct/rabbit-mq-direct-provider</module>
 </modules>
 
 	<build>
