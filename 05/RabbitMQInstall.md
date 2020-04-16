@@ -110,8 +110,8 @@ firewall-cmd --permanent --zone=public --list-ports
 rabbitmq-plugins enable rabbitmq_management
 ```
 ### 添加管理员同上
-![如图设置](aws.jpg)
+![如图设置](../img/aws.jpg)
 # 记得打开vps相应的端口策略
-[亚马逊服务器安装成品](http://3.132.215.12:15672/#/)
+[亚马逊服务器安装成品演示](http://3.132.215.12:15672/#/)
 
 
