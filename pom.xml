@@ -29,6 +29,8 @@
 	<module>05/rabbit-mq-hello</module>
 	<module>05/direct/rabbit-mq-direct-consumer</module>
 	<module>05/direct/rabbit-mq-direct-provider</module>
+		<module>05/topic/rabbit-mq-topic-consumer</module>
+	<module>05/topic/rabbit-mq-topic-provider</module>
 </modules>
 
 	<build>

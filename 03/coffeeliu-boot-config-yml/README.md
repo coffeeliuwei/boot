@@ -1,6 +1,7 @@
 
 ## 一、目标：
 学习什么是yml文件？和学习yml语法。
+
 SpringBoot的配置文件有两种，一种是properties结尾的，一种是以yaml或yml文件结尾的。
 1.	application.properties
 1.	application.yml

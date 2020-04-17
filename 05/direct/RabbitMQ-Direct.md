@@ -6,6 +6,7 @@
 3. 服务直接的通信采用direct（发布订阅）
 
 ## provider(生产者)端代码
+
 #### 生产者配置
 ```
 spring.application.name=springboot-amqp
@@ -50,6 +51,7 @@ class RabbitMqDirectProviderApplicationTests {
 
 ```
 ## consumer(消费者)代码
+
 #### 消费者配置
 ```
 spring.application.name=springboot-amqp
