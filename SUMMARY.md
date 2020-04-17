@@ -9,5 +9,5 @@
       * [RabbitMQ服务器配置](/05/RabbitMQInstall.md)
 	  * [RabbitMQ初识](/05/rabbit-mq-hello/README.md)
 	  * [RabbitMQ-Direct](/05/direct/RabbitMQ-Direct.md)
-	  * [RabbitMQ-Topic](/05/topic/RabbitMQ-Topic.md)
+	  * [RabbitMQ-Topic](/05/topic/RabbiMQ-Topic.md)
   * [第六讲：。。。。]()
