@@ -105,4 +105,4 @@ public class InfoReceiver {
 }
 ```
 ## 运行结果
-![](../../img/18.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/18.jpg?raw=true)

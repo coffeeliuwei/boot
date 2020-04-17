@@ -24,15 +24,15 @@ RabbitMQ确实吞吐量会低一些，这是因为他做的实现机制比较重
 
 ### 主要解决痛点
 + 同步变异步
-![](../../img/11.jpg)  
-![](../../img/12.jpg)  
-![](../../img/13.jpg)  
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/11.jpg?raw=true)  
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/12.jpg?raw=true)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/13.jpg?raw=true)
 + 解耦
-![](../../img/14.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/14.jpg?raw=true)
 + 流量削峰
-![](../../img/15.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/15.jpg?raw=true)
 ### RabbitMQ简单逻辑
-![](../../img/16.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/16.jpg?raw=true)
 #### 什么是队列？
 
 队列就像存放商品的仓库或者商店，是生产商品的工厂和购买商品的用户之间的中转站。
@@ -104,4 +104,4 @@ private Sender sender;
 }
 ```
 ### 运行结果
-![如图](../../img/1.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/1.jpg?raw=true)

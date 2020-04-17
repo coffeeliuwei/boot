@@ -166,4 +166,4 @@ public class LogsReceiver {
 }
 ```
 ## 运行结果
-![](../../img/20.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/20.jpg?raw=true)

@@ -1,5 +1,5 @@
 # RabbitMQ基本概念
-![](../img/10.jpg)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/10.jpg?raw=true)
 
 ### Message
 消息，消息是不具名的，它由消息头和消息体组成。消息体是不透明的，而消息头则由一系列的可选属性组成，这些属性包括**routing-key**（路由键）、**priority**（相对于其他消息的优先权）、**delivery-mode**（指出该消息可能需要持久性存储）等。
