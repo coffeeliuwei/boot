@@ -10,5 +10,5 @@
 	  * [RabbitMQ初识](/05/rabbit-mq-hello/README.md)
 	  * [RabbitMQ-Direct](/05/direct/RabbitMQ-Direct.md)
 	  * [RabbitMQ-Topic](/05/topic/RabbiMQ-Topic.md)
-	  * [RabbitMQ-Fanout及故障处理](/05/Fanout/RabbitMQ-Fanout.md)  
+	  * [RabbitMQ-Fanout及故障处理](/05/fanout/RabbitMQ-Fanout.md)  
   * [第六讲：lombok使用](/06/coffeeliu-boot-lombok/README.md)

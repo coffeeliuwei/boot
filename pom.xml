@@ -33,7 +33,7 @@
 	<module>05/topic/rabbit-mq-topic-provider</module>
 	<module>05/fanout/rabbit-mq-fanout-consumer</module>
 	<module>05/fanout/rabbit-mq-fanout-provider</module>
-	<module>06/rabbit-mq-lombok</module>
+	<module>06/coffeeliu-boot-lombok</module>
 </modules>
 
 	<build>
