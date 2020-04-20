@@ -1,5 +1,6 @@
 # 简介
 ### 微服务：
+
 一个项目 可以由多个 小型服务构成（微服务）  
 ### spring boot
 可以快速开发 微服务模块  
@@ -22,10 +23,7 @@ mvn根目录/conf/setting.xml
 ```
 <localRepository>D:/mvnlib</localRepository> 
 ```   
-在IDE中配置mvn：
-```
-window->preference->搜maven ,installations/user settings
-```
+
 + spring boot开发工具：  
 	+ Eclipse(STS插件)  
 	+ IntelliJ IDEA
@@ -38,5 +36,5 @@ window->preference->搜maven ,installations/user settings
 
 + spring boot将各个应用/三方框架 设置成了一个个“场景”**stater**，
  以后要用哪个，只需要引入那个场景即可。  
-选完之后，spring boot就会将 该场景所需要的所有依赖 自动注入。 
+选完之后，spring boot就会将 该场景所需要的所有依赖自动注入。 
 例如 选择 “web”,spring boot就会将web相关的依赖（tomcat  json） 全部引入本项目

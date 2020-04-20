@@ -34,6 +34,7 @@
 	<module>05/fanout/rabbit-mq-fanout-consumer</module>
 	<module>05/fanout/rabbit-mq-fanout-provider</module>
 	<module>06/coffeeliu-boot-lombok</module>
+	<module>06/coffeeliu-boot-async</module>
 </modules>
 
 	<build>

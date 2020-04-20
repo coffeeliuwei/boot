@@ -98,6 +98,7 @@ public class UserController {
 	}
 }
 ```
+
 ## 五、运行结果
 ![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/23.jpg?raw=true)
 ![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/24.jpg?raw=true)
