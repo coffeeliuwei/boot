@@ -14,3 +14,4 @@
   * [第六讲：工具使用]
 	  * [lombok插件用法](/06/coffeeliu-boot-lombok/README.md)
 	  * [线程池用法](/06/coffeeliu-boot-async/README.md)
+	  * [swagger用法](/06/coffeeliu-boot-swagger/README.md)
