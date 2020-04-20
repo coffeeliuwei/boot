@@ -147,7 +147,7 @@ public class User {
 
 #### 效果图及体验地址
 http://127.0.0.1:8080/swagger-ui.html
-![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/26.jpg?raw=true)
+![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/27.jpg?raw=true)
 
 
 
