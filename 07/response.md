@@ -289,9 +289,10 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
 
 以上代码，有2个地方需要重点讲解：
 #### 第1个地方：@ControllerAdvice 注解：
-@ControllerAdvice这是一个非常有用的注解，它的作用是增强Controller的扩展功能类。
-那@ControllerAdvice对Controller增强了哪些扩展功能呢？主要体现在2方面：
+@ControllerAdvice这是一个非常有用的注解，它的作用是增强Controller的扩展功能类。那@ControllerAdvice对Controller增强了哪些扩展功能呢？主要体现在2方面： 
+
   1. 对Controller全局数据统一处理。
+  
   1. 对Controller全局异常统一处理。
 
 在使用@ControllerAdvice时，还要特别注意，加上basePackages,

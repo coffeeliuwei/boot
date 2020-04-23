@@ -168,9 +168,12 @@ public class GlobalExceptionHandler  {
 
 ```
 handleThrowable方法的作用是：捕获内部异常，并把异常统一封装为ErrorResult对象。
-以上有几个注意点：  
+以上有几个注意点：
+  
   1. @RestControllerAdvice：A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
+  
   2. @ExceptionHandler为统一处理某一类异常，从而能够减少代码重复率和复杂度，@ExceptionHandler(Throwable.class)指处理Throwable的异常。
+  
   3. @ResponseStatus指定客户端收到的http状态码，这里配置500错误，客户端就显示500错误，
 
 ### 步骤4：体验效果
@@ -294,7 +297,8 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
 ```
 ## 六：课后练习题
 自己手写一个全局异常处理器和接口返回值统一标准格式  
-1. 模拟一个空指针异常，然后返回以下接口返回值统一标准格式：
+
+  1. 模拟一个空指针异常，然后返回以下接口返回值统一标准格式：
 ``` 
 {
   "code": 10000,
@@ -302,7 +306,8 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
   "data": null
 }
 ```
-2. 模拟用户登录，自定义异常，提示以下内容
+
+  2.  模拟用户登录，自定义异常，提示以下内容
 ``` 
 {
   "code": 20003,
