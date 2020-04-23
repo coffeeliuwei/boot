@@ -18,5 +18,5 @@
   * [第七讲：通用配置]
 	  * [response统一返回值处理](/07/reponse.md)
 	  * [exception统一异常处理](/07/exception.md)
-	* [Validator校验处理](/07/validator.md)
-	* [Assert断言处理](/07/assert.md)
+	  * [Validator校验处理](/07/validator.md)
+	  * [Assert断言处理](/07/assert.md)
