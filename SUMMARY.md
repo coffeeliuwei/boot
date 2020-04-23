@@ -16,7 +16,7 @@
 	  * [线程池用法](/06/coffeeliu-boot-async/README.md)
 	  * [swagger用法](/06/coffeeliu-boot-swagger/README.md)
   * [第七讲：通用配置]
-	  * [response统一返回值处理](/07/reponse.md)
+	  * [response统一返回值处理](/07/response.md)
 	  * [exception统一异常处理](/07/exception.md)
 	  * [Validator校验处理](/07/validator.md)
 	  * [Assert断言处理](/07/assert.md)

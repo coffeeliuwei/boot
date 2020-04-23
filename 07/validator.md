@@ -2,15 +2,16 @@
 将validator异常加入全局异常处理器
 
 ### 二、 为什么要用Validator参数校验器，它解决了什么问题？
-背景：在日常的接口开发中，经常要对接口的参数做校验，例如，登录的时候要校验用户名 密码是否为空。但是这种日常的接口参数校验太烦锁了，代码繁琐又多。
-Validator框架就是为了解决开发人员在开发的时候少写代码，提升开发效率的；它专门用来做接口参数的校验的，例如 email校验、用户名长度必须位于6到12之间 等等。
-原理：spring 的validator校验框架遵循了JSR-303验证规范（参数校验规范）,JSR是Java Specification Requests的缩写。
+  背景：在日常的接口开发中，经常要对接口的参数做校验，例如，登录的时候要校验用户名 密码是否为空。但是这种日常的接口参数校验太烦锁了，代码繁琐又多。
+Validator框架就是为了解决开发人员在开发的时候少写代码，提升开发效率的；它专门用来做接口参数的校验的，例如 email校验、用户名长度必须位于6到12之间 等等。  
+  
+  原理：spring 的validator校验框架遵循了JSR-303验证规范（参数校验规范）,JSR是Java Specification Requests的缩写。
 在默认情况下，Spring Boot会引入Hibernate Validator机制来支持JSR-303验证规范。
 
 spring boot的validator校验框架有3个特性：
-1. JSR303特性： JSR303是一项标准,只提供规范不提供实现，规定一些校验规范即校验注解，如@Null，@NotNull，@Pattern，位于javax.validation.constraints包下。
-2. hibernate validation特性：hibernate validation是对JSR303规范的实现，并增加了一些其他校验注解，如@Email，@Length，@Range等等
-3. spring validation：spring validation对hibernate validation进行了二次封装，在springmvc模块中添加了自动校验，并将校验信息封装进了特定的类中。
+  1. JSR303特性： JSR303是一项标准,只提供规范不提供实现，规定一些校验规范即校验注解，如@Null，@NotNull，@Pattern，位于javax.validation.constraints包下。
+  2. hibernate validation特性：hibernate validation是对JSR303规范的实现，并增加了一些其他校验注解，如@Email，@Length，@Range等等
+  3. spring validation：spring validation对hibernate validation进行了二次封装，在springmvc模块中添加了自动校验，并将校验信息封装进了特定的类中。
 
 ### 三、案例实战：实现一个SpringBoot的参数校验功能
 #### 步骤1：pom文件加入依赖包

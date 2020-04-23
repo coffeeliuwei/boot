@@ -168,10 +168,10 @@ public class GlobalExceptionHandler  {
 
 ```
 handleThrowable方法的作用是：捕获内部异常，并把异常统一封装为ErrorResult对象。
-以上有几个注意点：
-1. @RestControllerAdvice：A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
-2. @ExceptionHandler为统一处理某一类异常，从而能够减少代码重复率和复杂度，@ExceptionHandler(Throwable.class)指处理Throwable的异常。
-3. @ResponseStatus指定客户端收到的http状态码，这里配置500错误，客户端就显示500错误，
+以上有几个注意点：  
+  1. @RestControllerAdvice：A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
+  2. @ExceptionHandler为统一处理某一类异常，从而能够减少代码重复率和复杂度，@ExceptionHandler(Throwable.class)指处理Throwable的异常。
+  3. @ResponseStatus指定客户端收到的http状态码，这里配置500错误，客户端就显示500错误，
 
 ### 步骤4：体验效果
 ``` 

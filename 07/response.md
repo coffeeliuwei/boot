@@ -1,7 +1,8 @@
 # response统一格式
+
 ## 一、本课程目标：
-1. 弄清楚为什么要对springboot,所有Controller的response做统一格式封装？
-1. 学会用ResponseBodyAdvice接口 和 @ControllerAdvice注解
+  1. 弄清楚为什么要对springboot,所有Controller的response做统一格式封装？
+  1. 学会用ResponseBodyAdvice接口 和 @ControllerAdvice注解
 
 ## 二、为什么要对springboot的接口返回值统一标准格式?
 我们先来看下，springboot默认情况下的response是什么格式的
@@ -67,9 +68,9 @@ public void  error(  ){
 
 ## 三、定义response的标准格式
 一般的response的标准格式包含3部分：
-1. status状态值：代表本次请求response的状态结果。
-2. response描述：对本次状态码的描述。
-3. data数据：本次返回的数据。
+  1. status状态值：代表本次请求response的状态结果。
+  2. response描述：对本次状态码的描述。
+  3. data数据：本次返回的数据。
 ``` 
 {
    "status":0,
@@ -290,8 +291,8 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
 #### 第1个地方：@ControllerAdvice 注解：
 @ControllerAdvice这是一个非常有用的注解，它的作用是增强Controller的扩展功能类。
 那@ControllerAdvice对Controller增强了哪些扩展功能呢？主要体现在2方面：
-1. 对Controller全局数据统一处理。
-1. 对Controller全局异常统一处理。
+  1. 对Controller全局数据统一处理。
+  1. 对Controller全局异常统一处理。
 
 在使用@ControllerAdvice时，还要特别注意，加上basePackages,
 @ControllerAdvice(basePackages = "com.coffee"),因为如果不加的话，它可是对整个系统的Controller做了扩展功能，
@@ -312,19 +313,19 @@ if (o instanceof String) {
 ## 六：总结
 
 #### @ControllerAdvice
-+ @ControllerAdvice，是spring3.2提供的新注解。@ControllerAdvice注解内部使用@ExceptionHandler、@InitBinder、@ModelAttribute注解的方法应用到所有的 ***@RequestMapping***注解的方法。
-+ 我们要做的就是创建一个用@ControllerAdvice注释的类，并创建相应的三个方法，这三个方法分别用@ExceptionHandler注释以进行全局异常处理，@InitBinder用于全局init绑定，而@ModelAttribute用于全局model属性添加。
-+ 当请求达到Controller类中带@RequestMapping注解的方法时，如果没有本地定义的@ExceptionHandler，@InitBinder和@ModelAttribute时，将使用由@ControllerAdvice注解标记的类中的相应方法。
-+ 默认情况下，在@ControllerAdvice的方法会应用到所有的Controller中，但是你可以使用@ControllerAdvice的basePackages属性来限制应用到特定包路径下的controller。
+  + @ControllerAdvice，是spring3.2提供的新注解。@ControllerAdvice注解内部使用@ExceptionHandler、@InitBinder、@ModelAttribute注解的方法应用到所有的 ***@RequestMapping***注解的方法。
+  + 我们要做的就是创建一个用@ControllerAdvice注释的类，并创建相应的三个方法，这三个方法分别用@ExceptionHandler注释以进行全局异常处理，@InitBinder用于全局init绑定，而@ModelAttribute用于全局model属性添加。
+  + 当请求达到Controller类中带@RequestMapping注解的方法时，如果没有本地定义的@ExceptionHandler，@InitBinder和@ModelAttribute时，将使用由@ControllerAdvice注解标记的类中的相应方法。
+  + 默认情况下，在@ControllerAdvice的方法会应用到所有的Controller中，但是你可以使用@ControllerAdvice的basePackages属性来限制应用到特定包路径下的controller。
 
 #### ResponseBodyAdvice<T>
-+ @ResponseBody或者ResponseEntity的控制器方法可以在执行完成之后，response写入输出流（通过HttpMessageConverter）之前，完成对response的拦截
+  + @ResponseBody或者ResponseEntity的控制器方法可以在执行完成之后，response写入输出流（通过HttpMessageConverter）之前，完成对response的拦截
 
-+ 原文重点：Implementations may be registered directly with RequestMappingHandlerAdapter(requestmapping方法适配器) and ExceptionHandlerExceptionResolver(异常方法解析器) or more likely `annotated with @ControllerAdvice` in which case they will be auto-detected by both.
+  + 原文重点：Implementations may be registered directly with RequestMappingHandlerAdapter(requestmapping方法适配器) and ExceptionHandlerExceptionResolver(异常方法解析器) or more likely `annotated with @ControllerAdvice` in which case they will be auto-detected by both.
 
 #### @RestController
-+ @RestController = @Controller + @ResponseBody
+  + @RestController = @Controller + @ResponseBody
 
 #### @RestControllerAdvice
-+ A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
+  + A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
 
