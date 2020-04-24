@@ -2,6 +2,11 @@
 
   * [简介](README.md)
   * [第一讲：springboot helloworld初识](/01/coffeeliu-boot-helloworld/READE.md)
+      * [@SpringBootApplication简介](/01/springbootapplication.md)
+	  * [@SpringBootConfiguration简介](/01/spingbootconfiguration.md)
+	  * [@ComponetScan简介](/01/componentscan.md)
+	  * [@Import简介](/01/import.md)
+	  * [SpringFactories简介](/01/springfactories.md)
   * [第二讲：application.properties配置](/02/coffeeliu-boot-config/README.md)
   * [第三讲：yml配置](/03/coffeeliu-boot-config-yml/README.md)
   * [第四讲：日志配置](/04/coffeeliu-boot-log/README.md)
@@ -11,11 +16,11 @@
 	  * [RabbitMQ-Direct](/05/direct/RabbitMQ-Direct.md)
 	  * [RabbitMQ-Topic](/05/topic/RabbiMQ-Topic.md)
 	  * [RabbitMQ-Fanout及故障处理](/05/fanout/RabbitMQ-Fanout.md)  
-  * [第六讲：工具使用]
+  * 第六讲：工具使用
 	  * [lombok插件用法](/06/coffeeliu-boot-lombok/README.md)
 	  * [线程池用法](/06/coffeeliu-boot-async/README.md)
 	  * [swagger用法](/06/coffeeliu-boot-swagger/README.md)
-  * [第七讲：通用配置]
+  * 第七讲：通用配置
 	  * [response统一返回值处理](/07/response.md)
 	  * [exception统一异常处理](/07/exception.md)
 	  * [Validator校验处理](/07/validator.md)
