@@ -25,3 +25,6 @@
 	  * [exception统一异常处理](/07/exception.md)
 	  * [Validator校验处理](/07/validator.md)
 	  * [Assert断言处理](/07/assert.md)
+  * 第八讲：微服务-入门
+	  * [微服务简介](/09eureka/microservices.md)   
+	  * [Eureka单服务搭建](/09eureka/eureka-server/eurekaserver.md)

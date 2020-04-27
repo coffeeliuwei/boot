@@ -14,12 +14,18 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>coffeeliu-boot</name>
 
-	<properties>
+<!-- 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-
+ -->
 	<dependencies>
-	
+	   <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Hoxton.SR4</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
 	</dependencies>
 <modules>
  <module>01/coffeeliu-boot-helloworld</module>
@@ -35,6 +41,7 @@
 	<module>05/fanout/rabbit-mq-fanout-provider</module>
 	<module>06/coffeeliu-boot-lombok</module>
 	<module>06/coffeeliu-boot-async</module>
+	<module>09eureka</module>
 </modules>
 
 	<build>
