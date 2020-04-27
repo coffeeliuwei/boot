@@ -86,32 +86,34 @@ com.coffee.imports.UserBean@13d9cbf5
 
 ## 五、大厂面试题：讲下spring的ImportSelector接口有什么作用？
 
-  + AutoConfigurationImportSelector 6个核心接口
++ AutoConfigurationImportSelector 6个核心接口
+
 ``` 
 public class AutoConfigurationImportSelector implements DeferredImportSelector, BeanClassLoaderAware,
 		ResourceLoaderAware, BeanFactoryAware, EnvironmentAware, Ordered 
 ```
 其中最核心的是DeferredImportSelector接口。
 
-  + DeferredImportSelector 继承了ImportSelector
++ DeferredImportSelector 继承了ImportSelector
+  
 ``` 
 public interface DeferredImportSelector extends ImportSelector 
 ```
-  + ImportSelector
++ ImportSelector 
+  
 ``` 
 public interface ImportSelector {
-
 	/**
 	 * Select and return the names of which class(es) should be imported based on
 	 * the {@link AnnotationMetadata} of the importing @{@link Configuration} class.
 	 */
 	String[] selectImports(AnnotationMetadata importingClassMetadata);
-
 }
 ```
+
 从以上源码可以看出：
-ImportSelector接口值定义了一个selectImports方法，它的作用收集class注册到spring ioc容器里面。
-ImportSelector接口一般和@Import一起使用，一般用@Import会引入ImportSelector实现类后，会把实现类中得返回class数组都注入到spring ioc 容器中。
+  + ImportSelector接口值定义了一个selectImports方法，它的作用收集class注册到spring ioc容器里面。
+  + ImportSelector接口一般和@Import一起使用，一般用@Import会引入ImportSelector实现类后，会把实现类中得返回class数组都注入到spring ioc 容器中。
 
 ## 五、案例实战： 模仿@EnableAutoConfiguration注解，写一个@Enable*的开关注解
 很多开关注解类，例如：@EnableAsync 、@EnableSwagger2、@EnableAutoConfiguration
@@ -135,6 +137,7 @@ public class RoleBean {
 "com.coffee.selector.UserBean"
 "com.coffee.selector.RoleBean"
 目的：将收集到的2个class注册到spring ioc容器里面
+
 ``` 
 public class UserImportSelector implements ImportSelector {
     @Override
@@ -146,6 +149,7 @@ public class UserImportSelector implements ImportSelector {
 ### 步骤3：自定义一个开关接口
 一般采用@Import引入ImportSelector实现类(UserImportSelector.class)。
 spring会将实现类中返回的class数组
+
 ```
 new String[]{"com.coffee.selector.UserBean","com.coffee.selector.RoleBean}
 ```
@@ -159,8 +163,8 @@ public @interface EnableUserConfig {
 }
 
 ```
-
 ### 步骤4：增加一个配置类，用于设置@EnableUserConfig开关
+
 ``` 
 @EnableUserConfig
 public class UserConfig {
@@ -170,6 +174,7 @@ public class UserConfig {
 ```
 
 ### 步骤5：体验测试类
+
 ``` 
 
 public class Main {
@@ -187,6 +192,7 @@ public class Main {
 
 ```
 执行结果：
+
 ``` 
 com.coffee.selector.UserBean@651aed93
 com.coffee.selector.RoleBean@4dd6fd0a
