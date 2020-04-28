@@ -29,3 +29,4 @@
   * 第九讲：微服务-入门
 	  * [微服务简介](/09eureka/microservices.md)   
 	  * [Eureka单服务搭建](/09eureka/eureka-server/eurekaserver.md)
+	  * [Eureka服务器集群](/09eureka/eureka-server-cluster/eurekacluster.md)

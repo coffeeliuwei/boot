@@ -18,5 +18,6 @@
 	</dependencies>
   <modules>
   	<module>eureka-server</module>
+  	<module>eureka-server-cluster</module>
   </modules>
 </project>

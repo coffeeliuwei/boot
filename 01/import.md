@@ -115,7 +115,7 @@ public interface ImportSelector {
   + ImportSelector接口值定义了一个selectImports方法，它的作用收集class注册到spring ioc容器里面。
   + ImportSelector接口一般和@Import一起使用，一般用@Import会引入ImportSelector实现类后，会把实现类中得返回class数组都注入到spring ioc 容器中。
 
-## 五、案例实战： 模仿@EnableAutoConfiguration注解，写一个@Enable*的开关注解
+## 六、案例实战： 模仿@EnableAutoConfiguration注解，写一个@Enable*的开关注解
 很多开关注解类，例如：@EnableAsync 、@EnableSwagger2、@EnableAutoConfiguration
 @Enable代表的意思就是开启一项功能，起到了开关的作用。
 这些开关注解类的原理是什么？
@@ -198,7 +198,7 @@ com.coffee.selector.UserBean@651aed93
 com.coffee.selector.RoleBean@4dd6fd0a
 ```
 
-## 六、课后练习题：
+## 七、课后练习题：
 
 模仿@EnableAutoConfiguration、@EnableAsync 、@EnableSwagger2注解的原理
 自己编码设计一个@Enable*的开关注解。

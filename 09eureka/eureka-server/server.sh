@@ -6,7 +6,7 @@ JAR_NAME="eureka-server-1.0.0-SNAPSHOT.jar"
 JAR_PATH=$CUR_SHELL_DIR/$JAR_NAME
 #JAVA_MEM_OPTS=" -server -Xms1024m -Xmx1024m -XX:PermSize=128m"
 JAVA_MEM_OPTS=""
-#SPRING_PROFILES_ACTIV="-Dspring.profiles.active=127.0.0.1"
+#SPRING_PROFILES_ACTIV="-Dspring.profiles.active=eureka"
 #SPRING_PROFILES_ACTIV=""
 LOG_DIR=$CUR_SHELL_DIR/logs
 LOG_PATH=$LOG_DIR/${JAR_NAME%..log
