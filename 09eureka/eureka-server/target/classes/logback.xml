@@ -84,7 +84,7 @@
     </logger>-->
 
     <root level="INFO">
-        <!--<appender-ref ref="STDOUT"/>-->
+        <appender-ref ref="STDOUT"/>
       <!--   <appender-ref ref="FILE"/>
         <appender-ref ref="ERROR_FILE"/> -->
         <!--使用异步打印日志-->

@@ -1,4 +1,4 @@
-## Eureka
+## Eureka简介及快速搭建单服务
 ### 学习目标
 1. 搭建单服务中心
 2. 熟练操作linux系统
@@ -7,9 +7,13 @@
 
 ![如图设置](https://github.com/coffeeliuwei/boot/blob/master/img/38.jpg?raw=true)
 
-Eureka是Netflix开发的服务发现框架，本身是一个基于REST的服务，主要用于定位运行在AWS域中的中间层服务，以达到负载均衡和中间层服务故障转移的目的。SpringCloud将它集成在其子项目spring-cloud-netflix中，以实现SpringCloud的服务发现功能。
+#### 什么是Eureka
+Eureka是一项基于REST（代表性状态转移）的服务，主要在AWS云中用于定位服务，以实现负载均衡和中间层服务器的故障转移。我们称此服务为Eureka Server。Eureka还带有一个基于Java的客户端组件Eureka Client，它使与服务的交互更加容易。客户端还具有一个内置的负载均衡器，可以执行基本的循环负载均衡。在Netflix中更复杂的负载均衡器将Eureka包装起来，以基于流量，资源使用，错误条件等多种因素提供加权负载均衡，以提供出色的弹性。
 
-Eureka包含两个组件：Eureka Server和Eureka Client。
+#### Eureka的作用
+在AWS云中，由于其固有的性质，服务器来来往往。与使用具有已知IP地址和主机名的服务器的传统负载均衡器不同，在AWS中，负载均衡需要在使用负载均衡器动态注册和注销服务器时更加复杂。由于AWS尚未提供中间层负载均衡器，因此Eureka填补了中间层负载均衡领域的巨大空白。
+
+#### Eureka包含两个组件：Eureka Server和Eureka Client。
 + 调用关系：
   1. 服务提供者在启动时，向注册中心注册自己提供的服务。
   2. 服务消费者在启动时，向注册中心订阅自己所需的服务。
