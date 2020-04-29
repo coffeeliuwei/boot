@@ -4,6 +4,7 @@
 1. 了解Eureka原理
 1. 搭建集群服务中心
 2. 熟练操作linux系统
+
 ### 二、Eureka原理
 ![打jar包](https://github.com/coffeeliuwei/boot/blob/master/img/42.jpg?raw=true)
 
@@ -28,6 +29,7 @@
 如一台或多台Eureka服务器出现故障。由于Eureka客户端中具有注册表缓存信息，因此即使所有eureka服务器都关闭了，它们也可以正常运行。
 
 在同级别Eureka服务器出现故障时Eureka服务器也具有弹性。即使在客户端和服务器之间进行网络分区时，服务器也具有内置的弹性以防止大规模中断。
+
 #### Eureka自我保护机制
 如果Eureka服务器检测到数量超过预期的注册客户端已以不正当的方式终止了它们的连接，并且同时正等待驱逐退出，则它们将进入自我保存模式。这样做是为了确保灾难性的网络事件不会清除eureka注册表数据，并将其传播到下游的所有客户端。
 
@@ -85,6 +87,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 spring.security.user.name=user
 spring.security.user.password=111111
 ```
+
 #### 全部配置文件清单及详细说明
 + application-eureka1.profiles清单
 ```
@@ -253,6 +256,7 @@ make install
 `chmod -R 755 server.sh`
 + 启动服务
 `./server.sh start`
+
 ### 执行结果
 ![eureka1](https://github.com/coffeeliuwei/boot/blob/master/img/41.jpg?raw=true)
 ![eureka2](https://github.com/coffeeliuwei/boot/blob/master/img/42.jpg?raw=true)
