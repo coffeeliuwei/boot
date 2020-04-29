@@ -6,7 +6,7 @@
 2. 熟练操作linux系统
 
 ### 二、Eureka原理
-![打jar包](https://github.com/coffeeliuwei/boot/blob/master/img/42.jpg?raw=true)
+![原理图](https://github.com/coffeeliuwei/boot/blob/master/img/43.jpg?raw=true)
 
 上面的架构描述了Eureka在Netflix上的部署方式。每个区域至少有一个eureka服务器来处理区域故障。
 
