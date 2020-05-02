@@ -272,7 +272,7 @@ public class ProductController {
 + 可以通过设置内容裁决器的方式`configurer.ignoreAcceptHeader(true)`禁用对Accept检查`.defaultContentType(MediaType.APPLICATION_JSON,MediaType.ALL)`设置默认MediaTypes其中将json设为第一匹配的方式进行处理。
 
 ### 四、整体效果
-![Provider端自测效果](https://github.com/coffeeliuwei/boot/blob/master/img/47.jpg){:height="500" width="400"}
+![Provider端自测效果](https://github.com/coffeeliuwei/boot/blob/master/img/47.jpg)
 ![Consumer调用服务效果](https://github.com/coffeeliuwei/boot/blob/master/img/48.jpg?raw=true)
 
 ![Eureka服务状态](https://github.com/coffeeliuwei/boot/blob/master/img/49.jpg?raw=true )
