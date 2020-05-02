@@ -273,6 +273,7 @@ public class ProductController {
 
 ### 四、整体效果
 ![Provider端自测效果](https://github.com/coffeeliuwei/boot/blob/master/img/47.jpg?raw=true =500x400)
+<img src="https://github.com/coffeeliuwei/boot/blob/master/img/47.jpg" alt="Provider端自测效果" width="50%">
 ![Consumer调用服务效果](https://github.com/coffeeliuwei/boot/blob/master/img/48.jpg?raw=true =500x400)
 
 ![Eureka服务状态](https://github.com/coffeeliuwei/boot/blob/master/img/49.jpg?raw=true )
