@@ -191,7 +191,7 @@ actuator向外暴露health、info、shutdown端点。
 安全下线机制保证Eureka服务器不会将已经下线的服务提供者分配给服务消费者。这样不会导致服务消费者因调用不存在的服务而应用出错。
 ![下线后Eureka服务端状态](https://github.com/coffeeliuwei/boot/blob/master/img/44.jpg?raw=true)
 
-### 三、Consumer-服务消费者
+### 四、Consumer-服务消费者
 服务消费者主要完成：发现服务和消费服务。其中服务的发现主要由Eureka的客户端完成，而消费的任务由Ribbon完成。
 
 #### eureka-consumer项目的pom清单
@@ -271,7 +271,7 @@ public class ProductController {
 + 可以通过修改响应头的方式强制生成json格式。在控制器的每个@RequestMapping注解增加`produces = "application/json;charset=UTF-8"`属性。
 + 可以通过设置内容裁决器的方式`configurer.ignoreAcceptHeader(true)`禁用对Accept检查`.defaultContentType(MediaType.APPLICATION_JSON,MediaType.ALL)`设置默认MediaTypes其中将json设为第一匹配的方式进行处理。
 
-### 四、整体效果
+### 五、整体效果
 ![Provider端自测效果](https://github.com/coffeeliuwei/boot/blob/master/img/47.jpg?raw=true)
 ![Consumer调用服务效果](https://github.com/coffeeliuwei/boot/blob/master/img/48.jpg?raw=true)
 
