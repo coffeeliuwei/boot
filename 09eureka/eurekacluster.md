@@ -78,7 +78,13 @@ CAP原理说，一个数据分布式系统不可能同时满足C和A和P这3个�
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.httpBasic().and().authorizeRequests().anyRequest().authenticated();
+		http.csrf()
+				.disable()	//关闭跨域保护
+			.httpBasic() //为了实现通过url传递用户名和密码进行验证，这里启用基本http服务
+			.and()
+			.authorizeRequests()
+			.anyRequest()
+			.authenticated();
 	}	
 }
 ```
@@ -110,7 +116,7 @@ eureka.server.eviction-interval-timer-in-ms = 60000
 # 服务名，默认取 spring.application.name 配置值，如果没有则为 unknown
 #eureka.instance.appname = eureka-server
 # 实例ID
-eureka.instance.instance-id = eureka1-server
+eureka.instance.instance-id = eureka1-server:${random.value}
 # 应用实例主机名
 eureka.instance.hostname=eureka1
 # 客户端在注册时使用自己的IP而不是主机名，缺省：false
@@ -121,9 +127,11 @@ eureka.instance.prefer-ip-address = true
 eureka.instance.lease-expiration-duration-in-seconds = 90
 # 服务续约（心跳）频率，单位：秒，缺省30
 eureka.instance.lease-renewal-interval-in-seconds = 30
-# 状态页面的URL，相对路径，默认使用 HTTP 访问，如需使用 HTTPS则要使用绝对路径配置，缺省：/info
+# 状态页面的URL，相对路径，默认使用 HTTP 访问，
+#如需使用 HTTPS则要使用绝对路径配置，缺省：/info
 eureka.instance.status-page-url-path = /info
-# 健康检查页面的URL，相对路径，默认使用 HTTP 访问，如需使用 HTTPS则要使用绝对路径配置，缺省：/health
+# 健康检查页面的URL，相对路径，默认使用 HTTP 访问，
+#如需使用 HTTPS则要使用绝对路径配置，缺省：/health
 eureka.instance.health-check-url-path = /health
 #---------------------------http basic安全认证---------------------------------------
 #需要启动WebSecurity模块验证
@@ -131,7 +139,10 @@ spring.security.user.name=user
 spring.security.user.password=111111
 # ---------------------------eureka.client前缀------------------------------------
 #设置服务注册中心地址,指向另一个注册中心，如果多个用逗号隔开
-eureka.client.serviceUrl.defaultZone=http://${security.user.name}:${security.user.password}@eureka2:${server.port}/eureka/
+eureka.client.serviceUrl.defaultZone=\
+	http://${spring.security.user.name}:\
+	${spring.security.user.password}@eureka2:\
+	${server.port}/eureka/
 ```
 + application-eureka2.profiles清单
 ```
@@ -154,11 +165,11 @@ eureka.server.eviction-interval-timer-in-ms = 60000
 # 服务名，默认取 spring.application.name 配置值，如果没有则为 unknown
 #eureka.instance.appname = eureka-server
 # 实例ID
-eureka.instance.instance-id = eureka2-server
+eureka.instance.instance-id = eureka2-server:${random.value}
 # 应用实例主机名
 eureka.instance.hostname=eureka2
 # 客户端在注册时使用自己的IP而不是主机名，缺省：false
-#eureka.instance.prefer-ip-address = true
+eureka.instance.prefer-ip-address = true
 # 应用实例IP,若eureka.instance.prefer-ip-address为true并此选项没有的情况系统选择第一非环路IP
 #eureka.instance.ip-address = 192.168.1.127
 # 服务失效时间，失效的服务将被剔除。单位：秒，默认：90
@@ -175,14 +186,17 @@ spring.security.user.name=user
 spring.security.user.password=111111
 # ---------------------------eureka.client前缀------------------------------------
 #设置服务注册中心地址,指向另一个注册中心，如果多个用逗号隔开
-eureka.client.serviceUrl.defaultZone=http://${security.user.name}:${security.user.password}@eureka1:${server.port}/eureka/
+eureka.client.serviceUrl.defaultZone=\
+	http://${spring.security.user.name}:\
+	${spring.security.user.password}@eureka1:\
+	${server.port}/eureka/
 ```
 如有更多中心可以此方式两两互联继续拓展形成集群网络
 
 #### 对项目打包
 ![打jar包](https://github.com/coffeeliuwei/boot/blob/master/img/40.jpg?raw=true)
 
-### 发布Eureka服务(centos版本)
+### 四、发布Eureka服务(centos版本)
 + 对多台服务器分别配置静态网络
 ```
 cd /etc/sysconfig/network-scripts/

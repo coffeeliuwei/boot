@@ -1,0 +1,552 @@
+2020-04-29 22:58:04.538|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 22:58:05.126|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 22:58:05.211|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 22:58:05.541|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 22:58:05.552|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 22:58:05.553|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 22:58:05.553|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 22:58:05.657|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 22:58:05.658|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 1106 ms
+2020-04-29 22:58:05.725|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 22:58:05.725|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 22:58:05.730|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@61f39bb
+2020-04-29 22:58:06.264|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 22:58:06.265|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 22:58:06.474|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:58:07.073|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 22:58:07.102|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 18 endpoint(s) beneath base path ''
+2020-04-29 22:58:07.169|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 22:58:07.206|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 22:58:07.620|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 22:58:07.620|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 22:58:07.721|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 22:58:07.722|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 22:58:07.886|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 22:58:08.048|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 22:58:08.048|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 22:58:08.048|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 22:58:08.048|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 22:58:08.049|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 22:58:08.049|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 22:58:08.049|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 22:58:08.283|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 22:58:08.286|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 22:58:08.289|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 22:58:08.293|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588172288292 with initial instances count: 2
+2020-04-29 22:58:08.294|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 22:58:08.295|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588172288295, current=UP, previous=STARTING]
+2020-04-29 22:58:08.297|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 22:58:08.317|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 22:58:08.339|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 22:58:08.355|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 22:58:08.356|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 22:58:08.749|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 5.391 seconds (JVM running for 6.778)
+2020-04-29 22:58:09.753|RMI TCP Connection(1)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 22:58:09.753|RMI TCP Connection(1)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 22:58:09.758|RMI TCP Connection(1)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-04-29 23:03:08.070|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:05:16.038|RMI TCP Connection(16)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:05:16.039|RMI TCP Connection(16)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:05:16.039|RMI TCP Connection(16)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588172716039, current=DOWN, previous=UP]
+2020-04-29 23:05:16.039|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:05:16.042|RMI TCP Connection(16)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:05:16.045|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:05:16.050|RMI TCP Connection(16)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:05:19.053|RMI TCP Connection(16)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:05:19.060|RMI TCP Connection(16)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:05:19.071|RMI TCP Connection(16)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:05:19.072|RMI TCP Connection(16)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:05:19.219|RMI TCP Connection(16)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:05:19.220|RMI TCP Connection(16)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:05:19.227|RMI TCP Connection(16)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:05:19.230|RMI TCP Connection(16)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:05:56.752|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:05:57.287|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:05:57.367|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 23:05:57.628|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:05:57.635|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:05:57.636|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:05:57.636|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:05:57.719|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:05:57.719|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 954 ms
+2020-04-29 23:05:57.776|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:05:57.777|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:05:57.782|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4defd42
+2020-04-29 23:05:58.260|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:05:58.260|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:05:58.444|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:05:59.016|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:05:59.047|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:05:59.047|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:05:59.050|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-29 23:05:59.059|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 12 ms
+2020-04-29 23:05:59.112|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:05:59.197|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:05:59.518|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:05:59.519|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:05:59.617|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:05:59.617|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:05:59.758|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:05:59.895|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:05:59.895|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:05:59.895|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:05:59.895|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:05:59.896|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:05:59.896|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:05:59.896|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:06:00.106|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:06:00.109|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:06:00.111|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:06:00.115|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588172760114 with initial instances count: 2
+2020-04-29 23:06:00.116|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:06:00.117|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588172760117, current=UP, previous=STARTING]
+2020-04-29 23:06:00.119|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:06:00.124|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:06:00.145|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:06:00.153|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:06:00.154|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:06:00.434|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.697 seconds (JVM running for 5.421)
+2020-04-29 23:10:59.917|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:15:29.595|RMI TCP Connection(21)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:15:29.596|RMI TCP Connection(21)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:15:29.596|RMI TCP Connection(21)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588173329596, current=DOWN, previous=UP]
+2020-04-29 23:15:29.596|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:15:29.601|RMI TCP Connection(21)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:15:29.603|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:15:29.605|RMI TCP Connection(21)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:15:32.608|DiscoveryClient-1|WARN ||TimedSupervisorTask#run:90|task supervisor shutting down, can't accept the task
+2020-04-29 23:15:32.611|RMI TCP Connection(21)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:15:32.615|RMI TCP Connection(21)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:15:32.625|RMI TCP Connection(21)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:15:32.626|RMI TCP Connection(21)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:15:32.770|RMI TCP Connection(21)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:15:32.772|RMI TCP Connection(21)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:15:32.775|RMI TCP Connection(21)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:15:32.779|RMI TCP Connection(21)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:15:51.476|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:15:52.014|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:15:52.093|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f71e8cc1-82c8-3fe1-a771-bd1fd74eaa9b
+2020-04-29 23:15:52.329|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:15:52.336|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:15:52.336|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:15:52.337|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:15:52.420|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:15:52.421|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 931 ms
+2020-04-29 23:15:52.477|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:15:52.477|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:15:52.481|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@75a118e6
+2020-04-29 23:15:53.022|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:15:53.022|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:15:53.136|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:15:53.679|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:15:53.706|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-29 23:15:53.761|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:15:53.790|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:15:54.114|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:15:54.114|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:15:54.200|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:15:54.201|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:15:54.335|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:15:54.466|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:15:54.466|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:15:54.466|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:15:54.467|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:15:54.467|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:15:54.467|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:15:54.467|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:15:54.675|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:15:54.678|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:15:54.679|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:15:54.683|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588173354682 with initial instances count: 3
+2020-04-29 23:15:54.684|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:15:54.684|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588173354684, current=UP, previous=STARTING]
+2020-04-29 23:15:54.686|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:15:54.703|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:15:54.715|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:15:54.727|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:15:54.728|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:15:55.060|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.636 seconds (JVM running for 5.36)
+2020-04-29 23:15:56.375|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:15:56.375|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:15:56.379|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 3 ms
+2020-04-29 23:17:08.347|RMI TCP Connection(12)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:17:08.348|RMI TCP Connection(12)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:17:08.348|RMI TCP Connection(12)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588173428348, current=DOWN, previous=UP]
+2020-04-29 23:17:08.349|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:17:08.352|RMI TCP Connection(12)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:17:08.354|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:17:08.355|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:17:11.360|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:17:11.364|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:17:11.373|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:17:11.374|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:17:11.526|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:17:11.527|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:17:11.530|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:17:11.541|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:26:35.831|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:26:36.384|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:26:36.473|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 23:26:36.710|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:26:36.717|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:26:36.717|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:26:36.717|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:26:36.793|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:26:36.793|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 944 ms
+2020-04-29 23:26:36.859|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:26:36.860|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:26:36.864|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6dfcffb5
+2020-04-29 23:26:37.378|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:26:37.378|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:26:37.559|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:26:38.183|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:26:38.213|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 2 endpoint(s) beneath base path ''
+2020-04-29 23:26:38.270|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:26:38.298|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:26:38.630|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:26:38.630|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:26:38.722|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:26:38.722|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:26:38.873|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:26:39.018|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:26:39.018|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:26:39.018|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:26:39.019|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:26:39.019|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:26:39.019|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:26:39.019|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:26:39.238|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:26:39.241|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:26:39.244|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:26:39.248|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588173999247 with initial instances count: 2
+2020-04-29 23:26:39.250|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:26:39.251|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588173999251, current=UP, previous=STARTING]
+2020-04-29 23:26:39.252|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:26:39.254|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:26:39.254|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:26:39.259|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:26:39.262|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 8 ms
+2020-04-29 23:26:39.278|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:26:39.304|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:26:39.307|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:26:39.644|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.903 seconds (JVM running for 5.614)
+2020-04-29 23:29:03.580|RMI TCP Connection(13)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:29:03.581|RMI TCP Connection(13)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:29:03.581|RMI TCP Connection(13)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588174143581, current=DOWN, previous=UP]
+2020-04-29 23:29:03.581|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:29:03.584|RMI TCP Connection(13)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:29:03.587|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:29:03.587|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:29:06.590|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:29:06.594|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:29:06.604|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:29:06.605|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:29:06.738|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:29:06.739|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:29:06.742|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:29:06.745|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:30:22.171|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:30:22.709|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:30:22.790|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f71e8cc1-82c8-3fe1-a771-bd1fd74eaa9b
+2020-04-29 23:30:23.039|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:30:23.046|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:30:23.047|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:30:23.047|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:30:23.136|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:30:23.136|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 952 ms
+2020-04-29 23:30:23.196|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:30:23.197|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:30:23.202|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2cc03cd1
+2020-04-29 23:30:23.680|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:30:23.681|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:30:23.875|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:30:24.478|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:30:24.509|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-29 23:30:24.556|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:30:24.556|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:30:24.561|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-04-29 23:30:24.570|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:30:24.602|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:30:24.935|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:30:24.936|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:30:25.022|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:30:25.022|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:30:25.175|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:30:25.306|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:30:25.306|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:30:25.307|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:30:25.307|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:30:25.307|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:30:25.307|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:30:25.307|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:30:25.512|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:30:25.516|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:30:25.517|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:30:25.521|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588174225520 with initial instances count: 2
+2020-04-29 23:30:25.522|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:30:25.522|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588174225522, current=UP, previous=STARTING]
+2020-04-29 23:30:25.524|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:30:25.530|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:30:25.554|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:30:25.556|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:30:25.557|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:30:25.832|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.737 seconds (JVM running for 5.472)
+2020-04-29 23:35:25.329|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:38:11.282|RMI TCP Connection(18)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:38:11.283|RMI TCP Connection(18)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:38:11.283|RMI TCP Connection(18)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588174691283, current=DOWN, previous=UP]
+2020-04-29 23:38:11.284|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:38:11.287|RMI TCP Connection(18)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:38:11.290|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:38:11.290|RMI TCP Connection(18)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:38:14.297|RMI TCP Connection(18)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:38:14.301|RMI TCP Connection(18)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:38:14.311|RMI TCP Connection(18)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:38:14.312|RMI TCP Connection(18)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:38:14.443|RMI TCP Connection(18)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:38:14.444|RMI TCP Connection(18)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:38:14.447|RMI TCP Connection(18)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:38:14.451|RMI TCP Connection(18)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:39:07.473|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:39:07.995|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:39:08.087|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 23:39:08.336|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:39:08.343|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:39:08.344|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:39:08.344|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:39:08.421|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:39:08.421|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 936 ms
+2020-04-29 23:39:08.489|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:39:08.490|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:39:08.494|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6bda1d19
+2020-04-29 23:39:09.011|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:39:09.011|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:39:09.197|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:39:09.779|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:39:09.806|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 2 endpoint(s) beneath base path ''
+2020-04-29 23:39:09.861|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:39:09.888|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:39:10.220|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:39:10.221|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:39:10.327|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:39:10.327|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:39:10.327|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:39:10.328|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:39:10.333|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 6 ms
+2020-04-29 23:39:10.473|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:39:10.604|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:39:10.605|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:39:10.605|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:39:10.605|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:39:10.605|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:39:10.606|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:39:10.606|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:39:10.809|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:39:10.811|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:39:10.813|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:39:10.817|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588174750816 with initial instances count: 2
+2020-04-29 23:39:10.818|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:39:10.819|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588174750819, current=UP, previous=STARTING]
+2020-04-29 23:39:10.821|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:39:10.826|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:39:10.846|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:39:10.854|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:39:10.855|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:39:11.140|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.731 seconds (JVM running for 5.434)
+2020-04-29 23:41:10.527|RMI TCP Connection(11)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:41:10.527|RMI TCP Connection(11)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:41:10.528|RMI TCP Connection(11)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588174870528, current=DOWN, previous=UP]
+2020-04-29 23:41:10.528|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:41:10.531|RMI TCP Connection(11)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:41:10.533|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:41:10.534|RMI TCP Connection(11)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:41:13.538|DiscoveryClient-0|WARN ||TimedSupervisorTask#run:90|task supervisor shutting down, can't accept the task
+2020-04-29 23:41:13.541|RMI TCP Connection(11)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:41:13.545|RMI TCP Connection(11)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:41:13.555|RMI TCP Connection(11)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:41:13.557|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:41:13.695|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:41:13.697|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:41:13.700|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:41:13.703|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:41:20.164|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:41:20.696|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:41:20.781|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 23:41:21.024|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:41:21.030|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:41:21.031|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:41:21.031|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:41:21.112|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:41:21.113|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 933 ms
+2020-04-29 23:41:21.175|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:41:21.175|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:41:21.192|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@706eab5d
+2020-04-29 23:41:21.688|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:41:21.688|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:41:21.905|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:41:22.536|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:41:22.536|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:41:22.554|RMI TCP Connection(3)-127.0.0.1|INFO ||EndpointLinksResolver#<init>:58|Exposing 1 endpoint(s) beneath base path ''
+2020-04-29 23:41:22.573|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:41:22.598|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 61 ms
+2020-04-29 23:41:22.704|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:41:22.736|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:41:23.105|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:41:23.108|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:41:23.217|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:41:23.218|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:41:23.365|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:41:23.511|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:41:23.512|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:41:23.512|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:41:23.512|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:41:23.512|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:41:23.512|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:41:23.513|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:41:23.717|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:41:23.720|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:41:23.721|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:41:23.726|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588174883725 with initial instances count: 3
+2020-04-29 23:41:23.727|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:41:23.727|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588174883727, current=UP, previous=STARTING]
+2020-04-29 23:41:23.729|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:41:23.735|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:41:23.753|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:41:23.760|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:41:23.761|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:41:24.062|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.934 seconds (JVM running for 5.641)
+2020-04-29 23:45:14.864|RMI TCP Connection(15)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-29 23:45:14.865|RMI TCP Connection(15)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:45:14.865|RMI TCP Connection(15)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588175114865, current=DOWN, previous=UP]
+2020-04-29 23:45:14.865|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:45:14.868|RMI TCP Connection(15)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:45:14.871|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:45:14.871|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:45:17.875|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:45:17.880|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:45:17.890|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:45:17.891|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:18.025|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:45:18.026|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:45:18.029|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:18.032|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:32.371|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:45:32.926|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:45:33.017|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 23:45:33.265|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:45:33.272|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:33.273|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:45:33.273|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:45:33.350|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:45:33.350|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 962 ms
+2020-04-29 23:45:33.422|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:45:33.423|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:45:33.427|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3ed03652
+2020-04-29 23:45:33.926|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:45:33.927|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:45:34.106|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:45:34.691|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:45:34.718|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 18 endpoint(s) beneath base path ''
+2020-04-29 23:45:34.776|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:45:34.804|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:45:35.142|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:45:35.142|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:45:35.231|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:45:35.231|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:45:35.386|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:45:35.531|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:45:35.531|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:45:35.531|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:45:35.532|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:45:35.532|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:45:35.532|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:45:35.532|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:45:35.738|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:45:35.740|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:45:35.742|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:45:35.746|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588175135745 with initial instances count: 2
+2020-04-29 23:45:35.747|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:45:35.748|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588175135748, current=UP, previous=STARTING]
+2020-04-29 23:45:35.749|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:45:35.767|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:35.787|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:45:35.790|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:45:35.791|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:45:35.908|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:45:35.908|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:45:35.913|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-04-29 23:45:36.085|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.803 seconds (JVM running for 5.508)
+2020-04-29 23:45:42.126|Thread-18|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:45:42.126|Thread-18|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588175142126, current=DOWN, previous=UP]
+2020-04-29 23:45:42.127|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:45:42.130|Thread-18|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:45:42.132|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:45:42.133|Thread-18|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:45:45.136|Thread-18|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:45:45.142|Thread-18|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:45:45.151|Thread-18|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:45:45.153|Thread-18|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:45.289|Thread-18|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:45:45.290|Thread-18|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:45:45.293|Thread-18|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:45:45.298|Thread-18|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:46:09.289|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-29 23:46:09.823|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-29 23:46:09.900|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-29 23:46:10.146|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-29 23:46:10.154|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:46:10.155|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-29 23:46:10.155|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-29 23:46:10.246|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-29 23:46:10.246|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 943 ms
+2020-04-29 23:46:10.313|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:46:10.314|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:46:10.319|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7b7683d4
+2020-04-29 23:46:10.826|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-29 23:46:10.827|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-29 23:46:10.990|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:46:11.563|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-29 23:46:11.592|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 1 endpoint(s) beneath base path ''
+2020-04-29 23:46:11.649|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-29 23:46:11.676|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-29 23:46:11.997|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-29 23:46:11.997|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-29 23:46:12.081|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-29 23:46:12.081|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-29 23:46:12.222|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-29 23:46:12.357|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-29 23:46:12.357|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-29 23:46:12.357|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-29 23:46:12.358|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-29 23:46:12.358|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-29 23:46:12.358|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-29 23:46:12.358|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-29 23:46:12.567|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-29 23:46:12.570|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-29 23:46:12.572|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-29 23:46:12.575|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588175172575 with initial instances count: 2
+2020-04-29 23:46:12.576|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-29 23:46:12.577|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588175172577, current=UP, previous=STARTING]
+2020-04-29 23:46:12.578|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:46:12.595|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:46:12.608|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:46:12.620|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-29 23:46:12.621|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-29 23:46:12.889|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.671 seconds (JVM running for 5.393)
+2020-04-29 23:46:14.215|RMI TCP Connection(1)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 23:46:14.215|RMI TCP Connection(1)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-29 23:46:14.221|RMI TCP Connection(1)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-04-29 23:46:20.205|Thread-18|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-29 23:46:20.206|Thread-18|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588175180205, current=DOWN, previous=UP]
+2020-04-29 23:46:20.206|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-29 23:46:20.209|Thread-18|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:46:20.212|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-29 23:46:20.212|Thread-18|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-29 23:46:23.218|Thread-18|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-29 23:46:23.222|Thread-18|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-29 23:46:23.233|Thread-18|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-29 23:46:23.233|Thread-18|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:46:23.375|Thread-18|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-29 23:46:23.376|Thread-18|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-29 23:46:23.380|Thread-18|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-29 23:46:23.384|Thread-18|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]

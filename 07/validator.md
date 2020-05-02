@@ -1,6 +1,9 @@
+# validator验证封装
+
 ### 一、课程目标
 将validator异常加入全局异常处理器
 
+**此课程通用功能全部封装在coffeeliu-boot-commons项目中**
 ### 二、 为什么要用Validator参数校验器，它解决了什么问题？
   背景：在日常的接口开发中，经常要对接口的参数做校验，例如，登录的时候要校验用户名 密码是否为空。但是这种日常的接口参数校验太烦锁了，代码繁琐又多。
 Validator框架就是为了解决开发人员在开发的时候少写代码，提升开发效率的；它专门用来做接口参数的校验的，例如 email校验、用户名长度必须位于6到12之间 等等。  
@@ -14,14 +17,10 @@ spring boot的validator校验框架有3个特性：
   3. spring validation：spring validation对hibernate validation进行了二次封装，在springmvc模块中添加了自动校验，并将校验信息封装进了特定的类中。
 
 ### 三、案例实战：实现一个SpringBoot的参数校验功能
-#### 步骤1：pom文件加入依赖包
-springboot天然支持validator数据校验
-``` 
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
-```
+
+#### 步骤1：依赖包说明
+springboot天然支持validator数据校验，故无需添加额外依赖
+
 #### 步骤2：创建一个实体类
 ``` 
 @Data
@@ -130,14 +129,16 @@ public class PhoneValidator implements ConstraintValidator<Phone, String> {
 因为validator异常返回的内容是json比较复杂.不利于客户端联调，而且提示也不友好。
 
 #### 步骤1：全局异常处理器加入validator异常处理
-
+GlobalExceptionHandler.java
+**commons模块**
 ``` 
  /**
      * 400 validator Json约束异常封装
      */
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ErrorResult handleMethodArgumentNotValidException(MethodArgumentNotValidException e, HttpServletRequest request) {
+    public ErrorResult handleMethodArgumentNotValidException
+		(MethodArgumentNotValidException e, HttpServletRequest request) {
         String message = this.handle(e.getBindingResult().getFieldErrors());
         ErrorResult error = ErrorResult.fail(ResultCode.PARAM_NOT_VALID, e,  message);
         log.warn("URL:{} ,Json约束参数校验异常:{}", request.getRequestURI(),message);
@@ -158,7 +159,8 @@ public class PhoneValidator implements ConstraintValidator<Phone, String> {
      */
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(ConstraintViolationException.class)
-    public ErrorResult handleServiceException(ConstraintViolationException e, HttpServletRequest request) { 
+    public ErrorResult handleServiceException
+		(ConstraintViolationException e, HttpServletRequest request) { 
     	 String message = this.handle(e.getConstraintViolations());
     	 ErrorResult error = ErrorResult.fail(ResultCode.PARAM1_NOT_VALID, e,  message);
         log.warn("URL:{} ,实体校验异常:{}", request.getRequestURI(),message);
@@ -176,7 +178,8 @@ public class PhoneValidator implements ConstraintValidator<Phone, String> {
      */
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(ValidationException.class)
-    public ErrorResult handleValidationException(ValidationException e, HttpServletRequest request) {
+    public ErrorResult handleValidationException
+		(ValidationException e, HttpServletRequest request) {
     	 log.error("URL:{} ,违反约束:{}", request.getRequestURI(),e);
          return ErrorResult.fail(ResultCode.VALID, e);
     }

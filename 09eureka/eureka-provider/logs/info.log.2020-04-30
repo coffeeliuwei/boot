@@ -1,0 +1,499 @@
+2020-04-30 00:19:47.616|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-30 00:19:48.150|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-30 00:19:48.237|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-30 00:19:48.476|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-30 00:19:48.484|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-30 00:19:48.485|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-30 00:19:48.485|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 00:19:48.577|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-30 00:19:48.577|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 944 ms
+2020-04-30 00:19:48.644|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 00:19:48.645|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 00:19:48.650|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3964d79
+2020-04-30 00:19:49.279|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 00:19:49.279|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 00:19:49.483|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 00:19:50.035|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-30 00:19:50.066|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 1 endpoint(s) beneath base path ''
+2020-04-30 00:19:50.127|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-30 00:19:50.159|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-30 00:19:50.493|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-30 00:19:50.494|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-30 00:19:50.594|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-30 00:19:50.595|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-30 00:19:50.686|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 00:19:50.686|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-30 00:19:50.692|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 6 ms
+2020-04-30 00:19:50.739|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 00:19:50.872|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 00:19:50.872|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 00:19:50.873|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 00:19:50.873|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 00:19:50.873|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 00:19:50.873|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 00:19:50.873|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 00:19:51.070|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-30 00:19:51.072|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-30 00:19:51.074|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-30 00:19:51.078|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588177191077 with initial instances count: 2
+2020-04-30 00:19:51.079|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-30 00:19:51.079|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588177191079, current=UP, previous=STARTING]
+2020-04-30 00:19:51.080|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 00:19:51.086|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-30 00:19:51.105|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 00:19:51.112|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-30 00:19:51.113|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-30 00:19:51.397|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.85 seconds (JVM running for 5.578)
+2020-04-30 00:22:05.122|RMI TCP Connection(13)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-30 00:22:05.123|RMI TCP Connection(13)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-30 00:22:05.123|RMI TCP Connection(13)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588177325123, current=DOWN, previous=UP]
+2020-04-30 00:22:05.123|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 00:22:05.126|RMI TCP Connection(13)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 00:22:05.129|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-30 00:22:05.130|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 00:22:05.132|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-30 00:22:05.138|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-30 00:22:05.151|RMI TCP Connection(13)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-30 00:22:05.152|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-30 00:22:05.319|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-30 00:22:05.320|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-30 00:22:05.324|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-30 00:22:05.330|RMI TCP Connection(13)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-30 02:21:42.209|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-30 02:21:42.786|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-30 02:21:42.867|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-30 02:21:43.149|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-30 02:21:43.160|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-30 02:21:43.161|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-30 02:21:43.161|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 02:21:43.257|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-30 02:21:43.258|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 1034 ms
+2020-04-30 02:21:43.318|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 02:21:43.318|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 02:21:43.323|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@62d73ead
+2020-04-30 02:21:43.853|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 02:21:43.853|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 02:21:44.048|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 02:21:44.659|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-30 02:21:44.669|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 02:21:44.669|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-30 02:21:44.688|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 1 endpoint(s) beneath base path ''
+2020-04-30 02:21:44.699|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 29 ms
+2020-04-30 02:21:44.758|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-30 02:21:44.801|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-30 02:21:45.181|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-30 02:21:45.181|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-30 02:21:45.286|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-30 02:21:45.286|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-30 02:21:45.434|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 02:21:45.574|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 02:21:45.574|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 02:21:45.575|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 02:21:45.575|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 02:21:45.575|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 02:21:45.575|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 02:21:45.575|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 02:21:45.770|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-30 02:21:45.774|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-30 02:21:45.775|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-30 02:21:45.779|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588184505778 with initial instances count: 2
+2020-04-30 02:21:45.780|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-30 02:21:45.780|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588184505780, current=UP, previous=STARTING]
+2020-04-30 02:21:45.782|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 02:21:45.787|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-30 02:21:45.807|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 02:21:45.817|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-30 02:21:45.818|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-30 02:21:46.108|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 5.023 seconds (JVM running for 6.146)
+2020-04-30 02:26:45.596|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 02:31:45.616|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 02:32:06.281|RMI TCP Connection(19)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-30 02:32:06.281|RMI TCP Connection(19)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-30 02:32:06.282|RMI TCP Connection(19)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588185126282, current=DOWN, previous=UP]
+2020-04-30 02:32:06.282|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 02:32:06.285|RMI TCP Connection(19)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 02:32:06.287|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 02:32:06.289|RMI TCP Connection(19)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-30 11:41:37.027|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-30 11:41:37.526|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-30 11:41:37.620|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-30 11:41:37.872|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-30 11:41:37.878|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:41:37.879|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-30 11:41:37.879|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 11:41:37.941|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-30 11:41:37.941|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 898 ms
+2020-04-30 11:41:38.003|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 11:41:38.003|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 11:41:38.003|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@cf67838
+2020-04-30 11:41:38.502|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 11:41:38.502|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 11:41:38.674|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:41:39.210|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-30 11:41:39.242|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 1 endpoint(s) beneath base path ''
+2020-04-30 11:41:39.288|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-30 11:41:39.320|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-30 11:41:39.632|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 11:41:39.632|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:41:39.632|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 0 ms
+2020-04-30 11:41:39.678|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-30 11:41:39.678|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-30 11:41:39.803|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-30 11:41:39.803|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-30 11:41:39.956|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:41:40.080|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:41:45.136|main|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:41:45.152|main|WARN ||DiscoveryClient$1#get:300|Using default backup registry implementation which does not do anything.
+2020-04-30 11:41:45.152|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-30 11:41:45.152|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-30 11:41:45.152|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588218105152 with initial instances count: 0
+2020-04-30 11:41:45.152|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-30 11:41:45.152|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588218105152, current=UP, previous=STARTING]
+2020-04-30 11:41:45.152|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:41:45.168|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:41:45.183|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-30 11:41:45.183|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-30 11:41:45.499|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 9.585 seconds (JVM running for 10.398)
+2020-04-30 11:41:50.169|DiscoveryClient-InstanceInfoReplicator-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:41:50.169|DiscoveryClient-InstanceInfoReplicator-0|WARN ||DiscoveryClient#register:852|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:41:50.169|DiscoveryClient-InstanceInfoReplicator-0|WARN ||InstanceInfoReplicator#run:125|There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:42:15.171|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:42:20.186|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:42:20.201|DiscoveryClient-CacheRefreshExecutor-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:42:20.201|DiscoveryClient-HeartbeatExecutor-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:42:25.197|DiscoveryClient-InstanceInfoReplicator-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:42:25.197|DiscoveryClient-InstanceInfoReplicator-0|WARN ||DiscoveryClient#register:852|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:42:25.197|DiscoveryClient-InstanceInfoReplicator-0|WARN ||InstanceInfoReplicator#run:125|There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:42:50.206|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:42:55.211|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:42:55.211|DiscoveryClient-CacheRefreshExecutor-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:42:55.211|DiscoveryClient-HeartbeatExecutor-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:43:00.212|DiscoveryClient-InstanceInfoReplicator-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.126:8761 timed out
+2020-04-30 11:43:00.212|DiscoveryClient-InstanceInfoReplicator-0|WARN ||DiscoveryClient#register:852|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:43:00.213|DiscoveryClient-InstanceInfoReplicator-0|WARN ||InstanceInfoReplicator#run:125|There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:43:25.216|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:43:25.216|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:43:25.216|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:43:25.216|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:43:25.216|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:43:25.216|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:43:25.217|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:43:26.211|DiscoveryClient-HeartbeatExecutor-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-30 11:43:26.230|DiscoveryClient-CacheRefreshExecutor-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-30 11:43:30.217|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:43:31.230|DiscoveryClient-InstanceInfoReplicator-0|WARN ||RetryableEurekaHttpClient#execute:130|Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-30 11:43:31.230|DiscoveryClient-InstanceInfoReplicator-0|WARN ||DiscoveryClient#register:852|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:43:31.230|DiscoveryClient-InstanceInfoReplicator-0|WARN ||InstanceInfoReplicator#run:125|There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:850)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 11:43:56.234|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:43:56.234|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:43:56.234|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:43:56.235|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:43:56.235|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:43:56.235|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:43:56.235|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:43:57.261|DiscoveryClient-HeartbeatExecutor-0|INFO ||DiscoveryClient#renew:871|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - Re-registering apps/EUREKA-PROVIDER
+2020-04-30 11:43:57.262|DiscoveryClient-HeartbeatExecutor-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:43:57.273|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-30 11:43:57.615|DiscoveryClient-HeartbeatExecutor-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: false
+2020-04-30 11:44:27.277|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:44:27.309|DiscoveryClient-CacheRefreshExecutor-0|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-30 11:46:03.925|RMI TCP Connection(15)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-30 11:46:03.926|RMI TCP Connection(15)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-30 11:46:03.926|RMI TCP Connection(15)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588218363926, current=DOWN, previous=UP]
+2020-04-30 11:46:03.927|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:46:03.933|RMI TCP Connection(15)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:46:03.936|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-30 11:46:03.938|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 11:46:03.942|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-30 11:46:03.949|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-30 11:46:03.959|RMI TCP Connection(15)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-30 11:46:03.960|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:46:04.098|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-30 11:46:04.100|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-30 11:46:04.106|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:46:04.108|RMI TCP Connection(15)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:47:33.980|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-30 11:47:34.535|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-30 11:47:34.621|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-30 11:47:34.872|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-30 11:47:34.879|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:47:34.880|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-30 11:47:34.880|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 11:47:34.964|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-30 11:47:34.964|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 967 ms
+2020-04-30 11:47:35.034|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 11:47:35.035|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 11:47:35.039|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@10641c09
+2020-04-30 11:47:35.530|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 11:47:35.531|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 11:47:35.739|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:47:36.306|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-30 11:47:36.334|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-04-30 11:47:36.391|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-30 11:47:36.428|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-30 11:47:36.799|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-30 11:47:36.799|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-30 11:47:36.900|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-30 11:47:36.901|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-30 11:47:37.072|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 11:47:37.203|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:47:37.203|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:47:37.204|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:47:37.204|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:47:37.204|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:47:37.204|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:47:37.205|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:47:37.429|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-30 11:47:37.432|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-30 11:47:37.434|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-30 11:47:37.437|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588218457436 with initial instances count: 2
+2020-04-30 11:47:37.439|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-30 11:47:37.439|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588218457439, current=UP, previous=STARTING]
+2020-04-30 11:47:37.440|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:47:37.459|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:47:37.473|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 11:47:37.491|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-30 11:47:37.491|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-30 11:47:37.765|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.815 seconds (JVM running for 5.52)
+2020-04-30 11:47:38.021|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 11:47:38.022|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:47:38.030|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 8 ms
+2020-04-30 11:48:38.446|RMI TCP Connection(10)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-30 11:48:38.446|RMI TCP Connection(10)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-30 11:48:38.446|RMI TCP Connection(10)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588218518446, current=DOWN, previous=UP]
+2020-04-30 11:48:38.446|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:48:38.451|RMI TCP Connection(10)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:48:38.454|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 11:48:38.454|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-30 11:48:41.459|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-30 11:48:41.467|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-30 11:48:41.497|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-30 11:48:41.497|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:48:41.642|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-30 11:48:41.644|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-30 11:48:41.646|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:48:41.649|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:48:46.748|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-04-30 11:48:47.302|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-30 11:48:47.392|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=c1694ae3-5aa6-39c9-9abc-084651754f24
+2020-04-30 11:48:47.645|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 8081 (http)
+2020-04-30 11:48:47.652|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:48:47.652|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-04-30 11:48:47.652|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-30 11:48:47.727|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-04-30 11:48:47.727|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 962 ms
+2020-04-30 11:48:47.785|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 11:48:47.785|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 11:48:47.789|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7be7e15
+2020-04-30 11:48:48.265|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-04-30 11:48:48.265|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 11:48:48.475|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:48:49.080|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-30 11:48:49.112|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 18 endpoint(s) beneath base path ''
+2020-04-30 11:48:49.175|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-04-30 11:48:49.205|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-04-30 11:48:49.520|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-04-30 11:48:49.520|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-04-30 11:48:49.602|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-04-30 11:48:49.605|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-04-30 11:48:49.755|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 11:48:49.896|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-04-30 11:48:49.896|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-04-30 11:48:49.897|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-04-30 11:48:49.897|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-04-30 11:48:49.897|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-04-30 11:48:49.897|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-04-30 11:48:49.897|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-04-30 11:48:50.097|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-04-30 11:48:50.100|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-04-30 11:48:50.102|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-30 11:48:50.107|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588218530105 with initial instances count: 3
+2020-04-30 11:48:50.107|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-04-30 11:48:50.107|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588218530107, current=UP, previous=STARTING]
+2020-04-30 11:48:50.110|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 11:48:50.117|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-8081"]
+2020-04-30 11:48:50.145|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 11:48:50.145|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:48:50.147|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 11:48:50.152|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-04-30 11:48:50.160|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-30 11:48:50.162|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 8081
+2020-04-30 11:48:50.498|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.78 seconds (JVM running for 5.487)
+2020-04-30 11:53:49.921|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 11:58:49.966|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:03:49.992|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:08:50.017|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:13:50.041|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:18:50.066|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:23:50.090|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:28:50.114|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:33:50.138|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:38:50.162|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:43:50.187|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:48:50.210|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:53:50.235|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 12:58:50.259|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 13:03:50.285|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 13:08:50.310|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 13:13:50.335|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-04-30 13:18:25.314|RMI TCP Connection(99)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-04-30 13:18:25.319|RMI TCP Connection(99)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-04-30 13:18:25.319|RMI TCP Connection(99)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588223905319, current=DOWN, previous=UP]
+2020-04-30 13:18:25.319|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081: registering service...
+2020-04-30 13:18:25.329|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - registration status: 204
+2020-04-30 13:18:25.344|RMI TCP Connection(99)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 13:18:25.394|RMI TCP Connection(99)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-04-30 13:18:28.402|RMI TCP Connection(99)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-04-30 13:18:28.408|RMI TCP Connection(99)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:8081 - deregister  status: 200
+2020-04-30 13:18:28.421|RMI TCP Connection(99)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-04-30 13:18:28.426|RMI TCP Connection(99)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-8081"]
+2020-04-30 13:18:28.573|RMI TCP Connection(99)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-04-30 13:18:28.575|RMI TCP Connection(99)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-30 13:18:28.593|RMI TCP Connection(99)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-8081"]
+2020-04-30 13:18:28.600|RMI TCP Connection(99)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-8081"]

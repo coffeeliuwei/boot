@@ -1,9 +1,10 @@
-# response统一格式
+# response统一格式封装
 
 ## 一、本课程目标：
-  1. 弄清楚为什么要对springboot,所有Controller的response做统一格式封装？
-  1. 学会用ResponseBodyAdvice接口 和 @ControllerAdvice注解
+1. 弄清楚为什么要对springboot,所有Controller的response做统一格式封装？
+1. 学会用ResponseBodyAdvice接口 和 @ControllerAdvice注
 
+**此课程通用功能全部封装在coffeeliu-boot-commons项目中**
 ## 二、为什么要对springboot的接口返回值统一标准格式?
 我们先来看下，springboot默认情况下的response是什么格式的
 ### 第一种格式：response为String 
@@ -53,7 +54,7 @@ public void  error(  ){
     int i=9/0;
 }
 ```
-以上springboot的返回值为空
+以上springboot的返回值为系统默认json形式
 ``` 
 {
   "timestamp": "2020-04-07T05:24:16.120",
@@ -63,8 +64,8 @@ public void  error(  ){
   "path": "/user/error"
 } 
 ```
-以上4种，情况，如果你和客户端（app h5）开发人联调接口，返回数据格式很混乱，因为给他们的接口没有一个统一的格式，客户端开发人员，不知道如何处理返回值。
-故，我们应该统一response的标准格式。
+以上4种情况，如果你和客户端（app h5）开发人联调接口，返回数据格式很混乱，因为给他们的接口没有一个统一的格式，客户端开发人员，不知道如何处理返回值。
+因此，我们应该统一response的标准格式。
 
 ## 三、定义response的标准格式
 一般的response的标准格式包含3部分：
@@ -89,7 +90,7 @@ public void  error(  ){
 }
 ```
 把以上格式转换为Result代码
-
+**commons模块**
 ``` 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -156,6 +157,7 @@ public class Result<T> {
 }
 ```
 ### 步骤2:把状态码存在枚举类里面
+**commons模块**
 ``` 
 public enum ResultCode  {
 	/* 成功状态码 */
@@ -209,10 +211,10 @@ public class UserController {
     }
 }
 ```
-结论：看到这里，此封装代码弊端很大。因为今后你每写一个接口，都要手工指定Result.suc(),
+结论：看到这里，此封装代码弊端很大。因为今后每写一个接口，都要手工指定Result.suc()。
 ## 五、高级程序员对response代码封装
-如果你在公司推广你的编码规范，为了避免被公司其他程序员吐槽和鄙视，我们必须优化代码。
-优化的目标：不要每个接口都手工指定Result返回值。
+如果在公司推广以上编码规范，将会对团队协作造成干扰。
+因此我们的目标为：使用增强器统一封装返回值，无需对每个接口指定Result返回值即无需调用Result.suc()。
 
 ### 步骤1：采用ResponseBodyAdvice技术来实现response的统一格式
 springboot提供了ResponseBodyAdvice来帮我们处理
@@ -249,6 +251,7 @@ public interface ResponseBodyAdvice<T> {
 
 ```
 ### 步骤2：写一个ResponseBodyAdvice实现类
+**commons模块**
 ``` 
 @ControllerAdvice(basePackages = "com.coffee")
 public class ResponseHandler implements ResponseBodyAdvice<Object> {
@@ -287,27 +290,35 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
 
 ```
 
-以上代码，有2个地方需要重点讲解：
-#### 第1个地方：@ControllerAdvice 注解：
+#### 说明：
+1. @ControllerAdvice 注解：
 @ControllerAdvice这是一个非常有用的注解，它的作用是增强Controller的扩展功能类。那@ControllerAdvice对Controller增强了哪些扩展功能呢？主要体现在2方面： 
 
-  1. 对Controller全局数据统一处理。
-  
-  1. 对Controller全局异常统一处理。
+	1. 对Controller全局数据统一处理。
 
-在使用@ControllerAdvice时，还要特别注意，加上basePackages,
-@ControllerAdvice(basePackages = "com.coffee"),因为如果不加的话，它可是对整个系统的Controller做了扩展功能，
-它会对某些特殊功能产生冲突，例如**不加的话，在使用swagger时会出现空白页异常**。
+	1. 对Controller全局异常统一处理。
+
+	在使用@ControllerAdvice时，还要特别注意，加上basePackages,
+	@ControllerAdvice(basePackages = "com.coffee"),因为如果不加的话，它可是对整个系统的Controller做了扩展功能，
+	它会对某些特殊功能产生冲突，例如**不加的话，在使用swagger时会出现空白页异常**。
 
 
-#### 第2个地方：beforeBodyWrite方法体的response类型判断
+2. beforeBodyWrite方法体的response类型判断
 ``` 
 if (o instanceof String) {
             return JsonUtil.object2Json(ResResult.suc(o));
 }
 ```
-以上代码一定要加，因为Controller的返回值为String的时候，它是直接返回String,不是json，
-故我们要手工做下json转换处理
+以上代码一定要加，因为Controller的返回值为String的时候，它是直接返回String,不是json，故我们要手工做下json转换处理
+
+3. 此项目需在pom文件中引入我们自定义的**commons模块**依赖
+```
+<dependency>
+	<groupId>com.coffee</groupId>
+	<artifactId>coffeeliu-boot-commons</artifactId>
+	<version>${project.parent.version}</version>
+</dependency>
+```
 
 
 

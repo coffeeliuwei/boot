@@ -1,19 +1,22 @@
+# Exception封装
+
 ## 一、本课程目标：
-把**全局异常处理器**集成进**接口返回值统一标准格式**
+将**全局异常处理器**集成进**接口返回值统一标准格式**
 
-
+**此课程通用功能全部封装在coffeeliu-boot-commons项目中**
 ## 二、springboot为什么需要全局异常处理器？
-1. 先讲下什么是全局异常处理器？  
+1. 先讲下什么是全局异常处理器  
 全局异常处理器就是把整个系统的异常统一自动处理，程序员可以做到不用写try...catch
-2. 那为什么需要全局异常呢？
+2. 那为什么需要全局异常呢
 - 第一个原因：不用强制写try-catch,由全局异常处理器统一捕获处理
 ``` 
-    @PostMapping(value="/error1")
-    public void  error1(  ){
-        int i=9/0;
-    }
+@PostMapping(value="/error1")
+public void  error1(  ){
+	int i=9/0;
+}
 ```
-如果不用try-catch捕获的话，客户端就会怎么样？
+如果不用try-catch捕获的话，客户端就会怎么样?
+客户端报错信息：
 ``` 
 {
   "timestamp": "2020-04-02T02:15:26.591+0000",
@@ -23,29 +26,29 @@
   "path": "/user/error1"
 }
 ```
-这种格式对于客户端来说，不友好，而一般程序员的try-catch
+这种格式对于客户端来说，不友好，而一般程序员的try-catch也不够友好。
 ``` 
-    @PostMapping(value="/error11")
-    public String  error11(  ){
-        try{
-            int i=9/0;
-        }catch (Exception ex){
-            log.error("异常：{}",ex);
-            return "no";
-        }
-        return "ok";
-    }
+@PostMapping(value="/error11")
+public String  error11(  ){
+	try{
+		int i=9/0;
+	}catch (Exception ex){
+		log.error("异常：{}",ex);
+		return "no";
+	}
+	return "ok";
+}
 ```
-也不够友好。
+
 
 - 第二个原因：自定义异常，只能用全局异常来捕获。
 ``` 
-    @PostMapping(value="/error1")
-    public void  error1(  ){
-        throw new RuntimeException("用户已存在！！");
-    }
+@PostMapping(value="/error1")
+public void  error1(  ){
+	throw new RuntimeException("用户已存在！！");
+}
 ```
-结果
+客户端报错结果：
 ``` 
 {
   "timestamp": "2020-04-02T02:18:26.843+0000",
@@ -55,7 +58,7 @@
   "path": "/user/error4"
 }
 ```
-不可能这样直接返回给客户端，所以需要使用**接口返回值统一标准格式**
+报错结果过于粗糙不应直接暴露给客户端，所以需要使用**接口返回值统一标准格式**
 
 - 第三个原因：JSR303规范的Validator参数校验器，参数校验不通过会抛异常，是无法使用try-catch语句直接捕获，
 只能使用全局异常处理器了。
@@ -63,7 +66,9 @@
 ## 三、案例实战：编码实现一个springboot*全局异常处理器*
 
 ### 步骤1：封装异常内容，统一存储在枚举类中
-把所有的未知运行是异常都，用SYSTEM_ERROR(500, "系统异常，请稍后重试")来提示
+把所有的未知运行是异常都用SYSTEM_ERROR(500, "系统异常，请稍后重试")来提示
+**commons模块**
+ResultCode.java
 ``` 
 public enum ResultCode  {
 	/* 成功状态码 */
@@ -100,7 +105,7 @@ public enum ResultCode  {
 }
 ```
 ### 步骤2：封装异常结果类
-统一标准返回给客户的格式：
+期望返回给客户的统一格式：
 ``` 
 {
   "status": 500,
@@ -108,7 +113,8 @@ public enum ResultCode  {
   "exception": "java.lang.ArithmeticException"
 }
 ```
-
+建立错误结果类封装错误
+**commons模块**
 ``` 
 @Builder
 @AllArgsConstructor
@@ -148,7 +154,9 @@ public class ErrorResult {
 }
 ```
 
-### 步骤3：加个全局异常处理器，对异常进行处理
+### 步骤3：加全局异常处理器，对异常进行处理
+GlobalExceptionHandler.java
+**commons模块**
 ``` 
 @RestControllerAdvice(basePackages = "com.coffee" )
 //返回json格式错误让ResponseBodyAdvice调用
@@ -168,13 +176,14 @@ public class GlobalExceptionHandler  {
 
 ```
 handleThrowable方法的作用是：捕获内部异常，并把异常统一封装为ErrorResult对象。
-以上有几个注意点：
+
+说明：
   
-  1. @RestControllerAdvice：A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
-  
-  2. @ExceptionHandler为统一处理某一类异常，从而能够减少代码重复率和复杂度，@ExceptionHandler(Throwable.class)指处理Throwable的异常。
-  
-  3. @ResponseStatus指定客户端收到的http状态码，这里配置500错误，客户端就显示500错误，
+1. @RestControllerAdvice：A convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody
+
+2. @ExceptionHandler为统一处理某一类异常，从而能够减少代码重复率和复杂度，@ExceptionHandler(Throwable.class)指处理Throwable的异常。
+
+3. @ResponseStatus指定客户端收到的http状态码，这里配置500错误，客户端就显示500错误，
 
 ### 步骤4：体验效果
 ``` 
@@ -197,6 +206,7 @@ handleThrowable方法的作用是：捕获内部异常，并把异常统一封�
 ### 步骤1：封装一个自定义异常
 
 自定义异常通常是集成RuntimeException
+**commons模块**
 ``` 
 @Data
 public class BusinessException extends RuntimeException {
@@ -211,6 +221,8 @@ public class BusinessException extends RuntimeException {
 
 ### 步骤2：把自定义异常集成进全局异常处理器
 添加一个自定义异常处理。
+**commons模块**
+GlobalExceptionHandler.java
 ``` 
 	/**
      * 处理自定义异常
@@ -243,6 +255,7 @@ public class BusinessException extends RuntimeException {
 
 ## 五、案例实战：把全局异常处理器集成进接口返回值统一标准格式
 目标：把全局异常处理器的json格式转换为接口返回值统一标准格式格式
+原形式：
 ``` 
 {
   "status": 20001,
@@ -250,7 +263,7 @@ public class BusinessException extends RuntimeException {
   "exception": "com.coffee.boot.exceptions.BusinessException"
 }
 ```
-转换
+期望形式：
 ``` 
 {
    "status":20001,
@@ -259,6 +272,7 @@ public class BusinessException extends RuntimeException {
 }
 ```
 ### 步骤1：改造ResponseHandler
+**commons模块**
 ``` 
 @ControllerAdvice(basePackages = "com.coffee")
 @Order(Ordered.LOWEST_PRECEDENCE)
@@ -269,7 +283,8 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
      * treu=支持，false=不支持
      */
     @Override
-    public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
+    public boolean supports(MethodParameter methodParameter, 
+		Class<? extends HttpMessageConverter<?>> aClass) {
         /**
 		 String methodName=returnType.getMethod().getName(); 
         String method= "coffeeliu"; 
@@ -284,7 +299,9 @@ public class ResponseHandler implements ResponseBodyAdvice<Object> {
      * 处理response的具体业务方法
      */
     @Override
-    public Object beforeBodyWrite(Object o, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
+    public Object beforeBodyWrite(Object o, MethodParameter methodParameter, 
+		MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, 
+		ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
         if (o instanceof ErrorResult) {
             ErrorResult errorResult = (ErrorResult) o;
             return Result.fail(errorResult.getStatus(),errorResult.getMessage());
