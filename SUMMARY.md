@@ -32,3 +32,4 @@
 	  * [Eureka原理及搭建服务集群](/09eureka/eurekacluster.md)
 	  * [Eureka服务生产者与消费者](/09eureka/eurekaP&C.md)
 	  * [VScode远程调试linux](/09eureka/vscode.md)
+	  * [Ribbon负载均衡](/10ribbon/ribbon.md)
