@@ -99,7 +99,7 @@ eureka-provider.ribbon.NFLoadBalancerRuleClassName=\
 一般建议采用低并发策略BestAvailableRule。如项目分部于不同区域建议采用区域加权策略ZoneAvoidanceRule。
 
 
-## 点对点直连
+## 六、点对点直连
 在10ribbon项目中新建eureka-consumer-pvp项目，eureka-consumer-pvp源码沿用eureka-consumer项目源码
 
 ![点对点直连原理图](https://github.com/coffeeliuwei/boot/blob/master/img/64.jpg?raw=true)
@@ -111,6 +111,7 @@ eureka-provider.ribbon.NFLoadBalancerRuleClassName=\
 直接排除spring-cloud-starter-netflix-eureka-server架包
 + 单独添加ribbon架包
 pom文件部分代码
+
 ```
 <parent>
 	<groupId>com.coffee</groupId>
@@ -143,7 +144,9 @@ pom文件部分代码
 </dependencies>
 ```
 这里保留了actuator所以要增加spring-boot-starter-actuator依赖（以前是eureka包含了）
+
 + application.properties配置
+
 ```
 spring.application.name=eureka-consumer-pvp
 server.port=9090
@@ -155,7 +158,6 @@ management.endpoints.web.exposure.include=health,info,shutdown
 management.endpoint.shutdown.enabled=true
 #在控制台使用 curl -X POST 127.0.0.1:9090/shutdown
 #即可远程安全关掉程序
-
 #指定具体的服务实例清单
 eureka-provider.ribbon.listOfServers=192.168.1.127:8081
 ```
