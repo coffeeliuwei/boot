@@ -11,13 +11,13 @@
 
 ### 与linux建立远程连接
 服务器安装SSH Server与客户端安装SSH Client，由于本实验环境已安装XShell所以此步骤略过。
-使用`Ctrl+Shift+p`打开Remote-SSH:Add SSH Host连接linux服务器流程入下图：
+使用`Ctrl+Shift+p`打开Remote-SSH:Add SSH Host连接linux服务器流程入下图：    
 
-![如图](https://github.com/coffeeliuwei/boot/blob/master/img/53.jpg?raw=true)
+![如图](https://github.com/coffeeliuwei/boot/blob/master/img/53.jpg?raw=true)  
 
 ![如图](https://github.com/coffeeliuwei/boot/blob/master/img/54.jpg?raw=true)
 
-打开config配置进行linux参数配置
+打开config配置进行linux参数配置    
 
 ![如图](https://github.com/coffeeliuwei/boot/blob/master/img/55.jpg?raw=true)
 
@@ -160,9 +160,10 @@ esac
 + `JAR_NAMES_STR`:填写启动jar包
 + `JAVA_MEM_OPTS`：设置相应内存分配
 + `SPRING_PROFILES_ACTIVS`：设置相应spring启动配置。例如：在srping中配置文件为application-test.properties，此选项填写test。如无后缀直接填""。
-#### 调试
 
-![调试界面](https://github.com/coffeeliuwei/boot/blob/master/img/58.jpg?raw=true)
+#### 调试   
+
+![调试界面](https://github.com/coffeeliuwei/boot/blob/master/img/58.jpg?raw=true)       
 
 同时可通过VScode下方`终端`直接与linux进行命令交互用以代替第三方SSH软件。
 
