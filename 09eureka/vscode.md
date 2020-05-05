@@ -12,11 +12,13 @@
 ### 与linux建立远程连接
 服务器安装SSH Server与客户端安装SSH Client，由于本实验环境已安装XShell所以此步骤略过。
 使用`Ctrl+Shift+p`打开Remote-SSH:Add SSH Host连接linux服务器流程入下图：
+
 ![如图](https://github.com/coffeeliuwei/boot/blob/master/img/53.jpg?raw=true)
 
 ![如图](https://github.com/coffeeliuwei/boot/blob/master/img/54.jpg?raw=true)
 
 打开config配置进行linux参数配置
+
 ![如图](https://github.com/coffeeliuwei/boot/blob/master/img/55.jpg?raw=true)
 
 ![如图](https://github.com/coffeeliuwei/boot/blob/master/img/56.jpg?raw=true)
@@ -73,7 +75,7 @@
 功能说明：
 + 在"configurations"中添加"type": "bashdb"启动bash-debug配置模块
 + 启动调试选择脚本功能 "program": "${command:SelectScriptName}"
-+ 启动函数输入双参数设置 "args": ["\$\{input:arg1}","\$\{input:arg2}"]
++ 启动函数输入多参数设置 "args": ["\$\{input:arg1}","\$\{input:arg2}"]
 + 使用inputs设置arg1与arg2的详细配置， "type": "pickString"在运行期启动选择列表。
 + 具体参数含义请查看微软文档
 
@@ -104,28 +106,28 @@ fi
 startdo()
 {
  # check server
-        PIDS=$(ps --no-heading -C java -f --width 1000 | grep ${JAR_NAMES[$1-1]} | awk '{print $2}')
-        if [ -n "$PIDS" ]; then
-            echo -e "ERROR: The ${JAR_NAMES[$1-1]} already started and the PID is ${PIDS}."
-            exit 1
-        fi
+PIDS=$(ps --no-heading -C java -f --width 1000 | grep ${JAR_NAMES[$1-1]} | awk '{print $2}')
+if [ -n "$PIDS" ]; then
+	echo -e "ERROR: The ${JAR_NAMES[$1-1]} already started and the PID is ${PIDS}."
+	exit 1
+fi
 
-        echo "${JAR_NAMES[$1-1]}开始启动----------------------"
+echo "${JAR_NAMES[$1-1]}开始启动----------------------"
 
-        # 启动JAR_NAME
-        nohup java ${JAVA_MEM_OPTS[$1-1]} -jar ${SPRING_PROFILES_ACTIVS[$1-1]} $CUR_SHELL_DIR/${JAR_NAMES[$1-1]} >>/dev/null 2>&1 &
+# 启动JAR_NAME
+nohup java ${JAVA_MEM_OPTS[$1-1]} -jar ${SPRING_PROFILES_ACTIVS[$1-1]} $CUR_SHELL_DIR/${JAR_NAMES[$1-1]} >>/dev/null 2>&1 &
 
-        COUNT=0
-        while [ $COUNT -lt 1 ]; do
-            sleep 1
-            COUNT=$(ps --no-heading -C java -f --width 1000 | grep "${JAR_NAMES[$1-1]}" | awk '{print $2}' | wc -l)
-            if [ $COUNT -gt 0 ]; then
-                break
-            fi
-        done
-        PIDS=$(ps --no-heading -C java -f --width 1000 | grep "${JAR_NAMES[$1-1]}" | awk '{print $2}')
-        echo "${JAR_NAMES[$1-1]} Started and the PID is ${PIDS}."
-        echo "启动细节查看 $LOG_DIR/${JAR_NAMES[$1-1]}.log."
+COUNT=0
+while [ $COUNT -lt 1 ]; do
+	sleep 1
+	COUNT=$(ps --no-heading -C java -f --width 1000 | grep "${JAR_NAMES[$1-1]}" | awk '{print $2}' | wc -l)
+	if [ $COUNT -gt 0 ]; then
+		break
+	fi
+done
+PIDS=$(ps --no-heading -C java -f --width 1000 | grep "${JAR_NAMES[$1-1]}" | awk '{print $2}')
+echo "${JAR_NAMES[$1-1]} Started and the PID is ${PIDS}."
+echo "启动细节查看 $LOG_DIR/${JAR_NAMES[$1-1]}.log."
 
 }
 case "$1" in
@@ -155,9 +157,13 @@ stop)
     ;;
 esac
 ```
++ `JAR_NAMES_STR`:填写启动jar包
++ `JAVA_MEM_OPTS`：设置相应内存分配
++ `SPRING_PROFILES_ACTIVS`：设置相应spring启动配置。例如：在srping中配置文件为application-test.properties，此选项填写test。如无后缀直接填""。
 #### 调试
 
 ![调试界面](https://github.com/coffeeliuwei/boot/blob/master/img/58.jpg?raw=true)
-同时可通过下方`终端`直接与linux进行命令交互
+
+同时可通过VScode下方`终端`直接与linux进行命令交互用以代替第三方SSH软件。
 
 

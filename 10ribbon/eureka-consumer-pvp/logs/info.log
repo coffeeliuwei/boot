@@ -1,0 +1,132 @@
+2020-05-06 00:54:12.643|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-06 00:54:13.202|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=8abe3288-38e3-32a3-bd27-9efa60f2d104
+2020-05-06 00:54:13.443|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-06 00:54:13.454|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:54:13.455|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-06 00:54:13.455|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-06 00:54:13.551|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-06 00:54:13.552|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 896 ms
+2020-05-06 00:54:13.771|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-06 00:54:13.771|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-06 00:54:13.774|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-06 00:54:13.775|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-06 00:54:13.924|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-06 00:54:14.461|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-06 00:54:14.517|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:54:14.550|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-06 00:54:14.816|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 3.256 seconds (JVM running for 4.313)
+2020-05-06 00:54:16.960|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-06 00:54:16.960|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-06 00:54:16.964|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 4 ms
+2020-05-06 00:54:42.866|http-nio-9090-exec-1|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-06 00:54:42.889|http-nio-9090-exec-1|INFO ||BaseLoadBalancer#initWithConfig:197|Client: eureka-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-06 00:54:42.895|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#enableAndInitLearnNewServersFeature:222|Using serverListUpdater PollingServerListUpdater
+2020-05-06 00:54:42.907|http-nio-9090-exec-1|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-06 00:54:42.909|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#restOfInit:150|DynamicServerListLoadBalancer for client eureka-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[192.168.1.127:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.127:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.netflix.loadbalancer.ConfigurationBasedServerList@73e771fc
+2020-05-06 00:54:43.897|PollingServerListUpdater-0|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-06 00:56:16.990|RMI TCP Connection(11)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-06 00:56:16.993|RMI TCP Connection(11)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-06 00:56:17.003|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:56:17.136|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-06 00:56:17.137|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-06 00:56:17.140|RMI TCP Connection(11)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-06 00:56:17.141|RMI TCP Connection(11)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-06 00:56:17.142|RMI TCP Connection(11)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-06 00:56:17.143|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:56:17.145|RMI TCP Connection(11)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:56:17.146|Thread-19|INFO ||PollingServerListUpdater$LazyHolder$2#run:53|Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-06 00:56:24.518|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-06 00:56:25.052|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=8abe3288-38e3-32a3-bd27-9efa60f2d104
+2020-05-06 00:56:25.252|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-06 00:56:25.260|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:56:25.261|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-06 00:56:25.261|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-06 00:56:25.337|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-06 00:56:25.337|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 806 ms
+2020-05-06 00:56:25.551|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-06 00:56:25.552|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-06 00:56:25.556|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-06 00:56:25.557|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-06 00:56:25.695|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-06 00:56:26.225|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-06 00:56:26.284|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-06 00:56:26.304|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-06 00:56:26.572|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 3.078 seconds (JVM running for 3.775)
+2020-05-06 00:56:27.154|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-06 00:56:27.154|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-06 00:56:27.158|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 4 ms
+2020-05-06 00:56:31.051|http-nio-9090-exec-1|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-06 00:56:31.072|http-nio-9090-exec-1|INFO ||BaseLoadBalancer#initWithConfig:197|Client: eureka-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-06 00:56:31.079|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#enableAndInitLearnNewServersFeature:222|Using serverListUpdater PollingServerListUpdater
+2020-05-06 00:56:31.091|http-nio-9090-exec-1|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-06 00:56:31.093|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#restOfInit:150|DynamicServerListLoadBalancer for client eureka-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[192.168.1.127:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.127:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.netflix.loadbalancer.ConfigurationBasedServerList@25d831f0
+2020-05-06 00:56:32.082|PollingServerListUpdater-0|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-06 01:11:49.660|RMI TCP Connection(24)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-06 01:11:49.663|RMI TCP Connection(24)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-06 01:11:49.674|RMI TCP Connection(24)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-06 01:11:49.809|RMI TCP Connection(24)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-06 01:11:49.811|RMI TCP Connection(24)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-06 01:11:49.817|RMI TCP Connection(24)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-06 01:11:49.818|RMI TCP Connection(24)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-06 01:11:49.819|RMI TCP Connection(24)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-06 01:11:49.823|RMI TCP Connection(24)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-06 01:11:49.826|RMI TCP Connection(24)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-06 01:11:49.828|Thread-19|INFO ||PollingServerListUpdater$LazyHolder$2#run:53|Shutting down the Executor Pool for PollingServerListUpdater

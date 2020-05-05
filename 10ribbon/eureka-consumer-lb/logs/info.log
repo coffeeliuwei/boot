@@ -1,0 +1,600 @@
+2020-05-05 20:57:43.004|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-05 20:57:43.923|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-05 20:57:44.040|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f6725852-da0a-398f-9208-1e61afdf5070
+2020-05-05 20:57:44.386|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-05 20:57:44.398|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:57:44.399|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-05 20:57:44.399|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-05 20:57:44.504|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-05 20:57:44.505|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 1486 ms
+2020-05-05 20:57:44.586|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 20:57:44.586|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 20:57:44.595|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@523d6bdb
+2020-05-05 20:57:45.524|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 20:57:45.524|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 20:57:45.819|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 20:57:46.529|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-05 20:57:46.572|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-05 20:57:46.640|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-05-05 20:57:46.684|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-05-05 20:57:47.125|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-05-05 20:57:47.126|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-05-05 20:57:47.259|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-05-05 20:57:47.259|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-05-05 20:57:47.478|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 20:57:47.615|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-05-05 20:57:47.615|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-05-05 20:57:47.616|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-05-05 20:57:47.616|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-05-05 20:57:47.616|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-05-05 20:57:47.616|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-05-05 20:57:47.616|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-05-05 20:57:47.912|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-05-05 20:57:47.915|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-05-05 20:57:47.916|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-05 20:57:47.923|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588683467921 with initial instances count: 4
+2020-05-05 20:57:47.925|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-PROVIDER with eureka with status UP
+2020-05-05 20:57:47.926|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588683467926, current=UP, previous=STARTING]
+2020-05-05 20:57:47.928|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:9090: registering service...
+2020-05-05 20:57:47.944|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:57:47.982|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:9090 - registration status: 204
+2020-05-05 20:57:47.983|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-05 20:57:47.984|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 9090
+2020-05-05 20:57:48.263|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 6.566 seconds (JVM running for 7.838)
+2020-05-05 20:57:48.795|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-05 20:57:48.795|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-05 20:57:48.811|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 16 ms
+2020-05-05 20:58:52.309|RMI TCP Connection(10)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-05 20:58:52.310|RMI TCP Connection(10)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-PROVIDER with eureka with status DOWN
+2020-05-05 20:58:52.310|RMI TCP Connection(10)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588683532310, current=DOWN, previous=UP]
+2020-05-05 20:58:52.311|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:9090: registering service...
+2020-05-05 20:58:52.314|RMI TCP Connection(10)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 20:58:52.317|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:9090 - registration status: 204
+2020-05-05 20:58:52.318|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-05-05 20:58:55.320|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-05-05 20:58:55.329|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-PROVIDER/JPXUIPMY11S3CE7:eureka-provider:9090 - deregister  status: 200
+2020-05-05 20:58:55.338|RMI TCP Connection(10)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-05-05 20:58:55.340|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:58:55.477|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-05 20:58:55.479|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-05 20:58:55.485|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:58:55.489|RMI TCP Connection(10)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:59:53.836|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-05 20:59:54.398|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-05 20:59:54.478|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f6725852-da0a-398f-9208-1e61afdf5070
+2020-05-05 20:59:54.719|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-05 20:59:54.726|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:59:54.726|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-05 20:59:54.727|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-05 20:59:54.809|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-05 20:59:54.809|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 960 ms
+2020-05-05 20:59:54.866|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 20:59:54.867|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 20:59:54.871|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7be3a9ce
+2020-05-05 20:59:55.456|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 20:59:55.457|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 20:59:55.600|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 20:59:56.167|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-05 20:59:56.194|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-05 20:59:56.252|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-05-05 20:59:56.281|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-05-05 20:59:56.607|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-05-05 20:59:56.608|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-05-05 20:59:56.694|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-05-05 20:59:56.695|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-05-05 20:59:56.843|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 20:59:56.986|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-05-05 20:59:56.986|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-05-05 20:59:56.987|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-05-05 20:59:56.987|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-05-05 20:59:56.987|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-05-05 20:59:56.987|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-05-05 20:59:56.987|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-05-05 20:59:57.211|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-05-05 20:59:57.222|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-05-05 20:59:57.226|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-05 20:59:57.230|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588683597229 with initial instances count: 4
+2020-05-05 20:59:57.232|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-CONSUMER with eureka with status UP
+2020-05-05 20:59:57.232|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588683597232, current=UP, previous=STARTING]
+2020-05-05 20:59:57.234|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER/JPXUIPMY11S3CE7:eureka-consumer:9090: registering service...
+2020-05-05 20:59:57.252|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-05 20:59:57.265|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER/JPXUIPMY11S3CE7:eureka-consumer:9090 - registration status: 204
+2020-05-05 20:59:57.276|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-05 20:59:57.277|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 9090
+2020-05-05 20:59:57.549|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.789 seconds (JVM running for 5.54)
+2020-05-05 20:59:58.735|RMI TCP Connection(2)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-05 20:59:58.735|RMI TCP Connection(2)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-05 20:59:58.740|RMI TCP Connection(2)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-05-05 21:01:25.641|http-nio-9090-exec-1|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-05 21:01:25.675|http-nio-9090-exec-1|INFO ||ShutdownEnabledTimer#<init>:58|Shutdown hook installed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 21:01:25.676|http-nio-9090-exec-1|INFO ||BaseLoadBalancer#initWithConfig:197|Client: eureka-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-05 21:01:25.684|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#enableAndInitLearnNewServersFeature:222|Using serverListUpdater PollingServerListUpdater
+2020-05-05 21:01:25.708|http-nio-9090-exec-1|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-05 21:01:25.710|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#restOfInit:150|DynamicServerListLoadBalancer for client eureka-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[192.168.1.127:8081, 192.168.1.126:8081],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.127:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.1.126:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@70134d9e
+2020-05-05 21:01:26.688|PollingServerListUpdater-0|INFO ||ChainedDynamicProperty$ChainLink#checkAndFlip:115|Flipping property: eureka-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-05 21:04:57.002|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 21:09:57.017|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 21:14:57.032|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 21:19:57.046|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 21:24:57.060|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 21:27:22.533|RMI TCP Connection(38)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-05 21:27:22.534|RMI TCP Connection(38)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-CONSUMER with eureka with status DOWN
+2020-05-05 21:27:22.534|RMI TCP Connection(38)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588685242534, current=DOWN, previous=UP]
+2020-05-05 21:27:22.535|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER/JPXUIPMY11S3CE7:eureka-consumer:9090: registering service...
+2020-05-05 21:27:22.540|RMI TCP Connection(38)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 21:27:22.541|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER/JPXUIPMY11S3CE7:eureka-consumer:9090 - registration status: 204
+2020-05-05 21:27:22.545|RMI TCP Connection(38)-127.0.0.1|INFO ||ShutdownEnabledTimer#cancel:67|Shutdown hook removed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 21:27:22.552|RMI TCP Connection(38)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-05-05 21:27:25.556|RMI TCP Connection(38)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-05-05 21:27:25.564|RMI TCP Connection(38)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-CONSUMER/JPXUIPMY11S3CE7:eureka-consumer:9090 - deregister  status: 200
+2020-05-05 21:27:25.581|RMI TCP Connection(38)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-05-05 21:27:25.582|RMI TCP Connection(38)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-05 21:27:25.725|RMI TCP Connection(38)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-05 21:27:25.727|RMI TCP Connection(38)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-05 21:27:25.733|RMI TCP Connection(38)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 21:27:25.734|RMI TCP Connection(38)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 21:27:25.735|RMI TCP Connection(38)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 21:27:25.738|RMI TCP Connection(38)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-05 21:27:25.743|RMI TCP Connection(38)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-05 21:27:25.744|Thread-21|INFO ||PollingServerListUpdater$LazyHolder$2#run:53|Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-05 22:21:22.999|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-05 22:21:23.562|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-05 22:21:23.643|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f6725852-da0a-398f-9208-1e61afdf5070
+2020-05-05 22:21:23.917|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-05 22:21:23.929|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:21:23.930|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-05 22:21:23.931|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-05 22:21:24.028|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-05 22:21:24.028|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 1016 ms
+2020-05-05 22:21:24.088|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 22:21:24.089|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 22:21:24.094|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3bfc6a5e
+2020-05-05 22:21:24.640|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 22:21:24.640|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 22:21:24.848|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 22:21:25.404|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-05 22:21:25.437|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-05 22:21:25.493|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-05-05 22:21:25.526|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-05-05 22:21:25.907|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-05-05 22:21:25.907|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-05-05 22:21:26.014|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-05-05 22:21:26.014|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-05-05 22:21:26.161|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 22:21:26.305|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-05-05 22:21:26.306|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-05-05 22:21:26.306|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-05-05 22:21:26.307|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-05-05 22:21:26.307|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-05-05 22:21:26.307|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-05-05 22:21:26.307|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-05-05 22:21:26.547|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-05-05 22:21:26.550|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-05-05 22:21:26.553|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-05 22:21:26.556|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588688486555 with initial instances count: 4
+2020-05-05 22:21:26.558|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-CONSUMER-LB with eureka with status UP
+2020-05-05 22:21:26.558|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588688486558, current=UP, previous=STARTING]
+2020-05-05 22:21:26.562|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090: registering service...
+2020-05-05 22:21:26.578|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:21:26.595|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - registration status: 204
+2020-05-05 22:21:26.619|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-05 22:21:26.620|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-05 22:21:26.625|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-05 22:21:26.625|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 9090
+2020-05-05 22:21:26.625|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 5 ms
+2020-05-05 22:21:27.025|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 5.143 seconds (JVM running for 6.333)
+2020-05-05 22:21:40.125|http-nio-9090-exec-1|INFO ||ShutdownEnabledTimer#<init>:58|Shutdown hook installed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 22:21:40.126|http-nio-9090-exec-1|INFO ||BaseLoadBalancer#initWithConfig:197|Client: eureka-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-05 22:21:40.132|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#enableAndInitLearnNewServersFeature:222|Using serverListUpdater PollingServerListUpdater
+2020-05-05 22:21:40.157|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#restOfInit:150|DynamicServerListLoadBalancer for client eureka-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[192.168.1.127:8081, 192.168.1.126:8081],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.127:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.1.126:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4a2d5743
+2020-05-05 22:22:49.221|RMI TCP Connection(12)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-05 22:22:49.222|RMI TCP Connection(12)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-CONSUMER-LB with eureka with status DOWN
+2020-05-05 22:22:49.222|RMI TCP Connection(12)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588688569222, current=DOWN, previous=UP]
+2020-05-05 22:22:49.223|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090: registering service...
+2020-05-05 22:22:49.225|RMI TCP Connection(12)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 22:22:49.229|RMI TCP Connection(12)-127.0.0.1|INFO ||ShutdownEnabledTimer#cancel:67|Shutdown hook removed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 22:22:49.230|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - registration status: 204
+2020-05-05 22:22:49.235|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-05-05 22:22:52.237|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-05-05 22:22:52.242|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - deregister  status: 200
+2020-05-05 22:22:52.254|RMI TCP Connection(12)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-05-05 22:22:52.255|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:22:52.396|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-05 22:22:52.397|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-05 22:22:52.401|RMI TCP Connection(12)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:22:52.402|RMI TCP Connection(12)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:22:52.403|RMI TCP Connection(12)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:22:52.406|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:22:52.409|RMI TCP Connection(12)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:22:52.412|Thread-21|INFO ||PollingServerListUpdater$LazyHolder$2#run:53|Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-05 22:24:09.864|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-05 22:24:10.432|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-05 22:24:10.516|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f6725852-da0a-398f-9208-1e61afdf5070
+2020-05-05 22:24:10.763|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-05 22:24:10.770|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:24:10.771|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-05 22:24:10.771|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-05 22:24:10.850|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-05 22:24:10.850|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 972 ms
+2020-05-05 22:24:10.909|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 22:24:10.910|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 22:24:10.914|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@78525ef9
+2020-05-05 22:24:11.492|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 22:24:11.492|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 22:24:11.639|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 22:24:12.199|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-05 22:24:12.227|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-05 22:24:12.287|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-05-05 22:24:12.317|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-05-05 22:24:12.656|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-05-05 22:24:12.657|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-05-05 22:24:12.741|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-05-05 22:24:12.742|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-05-05 22:24:12.886|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 22:24:13.022|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-05-05 22:24:13.022|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-05-05 22:24:13.022|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-05-05 22:24:13.023|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-05-05 22:24:13.023|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-05-05 22:24:13.023|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-05-05 22:24:13.023|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-05-05 22:24:13.236|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-05-05 22:24:13.238|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-05-05 22:24:13.240|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-05 22:24:13.244|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588688653243 with initial instances count: 4
+2020-05-05 22:24:13.246|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-CONSUMER-LB with eureka with status UP
+2020-05-05 22:24:13.246|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588688653246, current=UP, previous=STARTING]
+2020-05-05 22:24:13.248|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090: registering service...
+2020-05-05 22:24:13.271|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:24:13.283|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - registration status: 204
+2020-05-05 22:24:13.296|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-05 22:24:13.296|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 9090
+2020-05-05 22:24:13.576|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.764 seconds (JVM running for 5.495)
+2020-05-05 22:24:14.818|RMI TCP Connection(1)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-05 22:24:14.819|RMI TCP Connection(1)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-05 22:24:14.823|RMI TCP Connection(1)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 4 ms
+2020-05-05 22:24:19.981|http-nio-9090-exec-1|INFO ||ShutdownEnabledTimer#<init>:58|Shutdown hook installed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 22:24:19.982|http-nio-9090-exec-1|INFO ||BaseLoadBalancer#initWithConfig:197|Client: eureka-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-05 22:24:19.987|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#enableAndInitLearnNewServersFeature:222|Using serverListUpdater PollingServerListUpdater
+2020-05-05 22:24:20.009|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#restOfInit:150|DynamicServerListLoadBalancer for client eureka-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[192.168.1.127:8081, 192.168.1.126:8081],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.127:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.1.126:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6efead2a
+2020-05-05 22:24:34.070|RMI TCP Connection(9)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-05 22:24:34.071|RMI TCP Connection(9)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-CONSUMER-LB with eureka with status DOWN
+2020-05-05 22:24:34.072|RMI TCP Connection(9)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588688674071, current=DOWN, previous=UP]
+2020-05-05 22:24:34.072|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090: registering service...
+2020-05-05 22:24:34.075|RMI TCP Connection(9)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 22:24:34.078|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - registration status: 204
+2020-05-05 22:24:34.080|RMI TCP Connection(9)-127.0.0.1|INFO ||ShutdownEnabledTimer#cancel:67|Shutdown hook removed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 22:24:34.085|RMI TCP Connection(9)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-05-05 22:24:37.087|RMI TCP Connection(9)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-05-05 22:24:37.093|RMI TCP Connection(9)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - deregister  status: 200
+2020-05-05 22:24:37.104|RMI TCP Connection(9)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-05-05 22:24:37.105|RMI TCP Connection(9)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:24:37.246|RMI TCP Connection(9)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-05 22:24:37.247|RMI TCP Connection(9)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-05 22:24:37.250|RMI TCP Connection(9)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:24:37.251|RMI TCP Connection(9)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:24:37.252|RMI TCP Connection(9)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:24:37.254|RMI TCP Connection(9)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:24:37.257|RMI TCP Connection(9)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:24:37.258|Thread-21|INFO ||PollingServerListUpdater$LazyHolder$2#run:53|Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-05 22:25:02.486|main|INFO ||SpringApplication#logStartupProfileInfo:651|No active profile set, falling back to default profiles: default
+2020-05-05 22:25:03.039|main|WARN ||EndpointId#logWarning:155|Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-05 22:25:03.131|main|INFO ||GenericScope#setSerializationId:295|BeanFactory id=f6725852-da0a-398f-9208-1e61afdf5070
+2020-05-05 22:25:03.378|main|INFO ||TomcatWebServer#initialize:92|Tomcat initialized with port(s): 9090 (http)
+2020-05-05 22:25:03.385|main|INFO ||DirectJDKLog#log:173|Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:25:03.385|main|INFO ||DirectJDKLog#log:173|Starting service [Tomcat]
+2020-05-05 22:25:03.385|main|INFO ||DirectJDKLog#log:173|Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-05 22:25:03.460|main|INFO ||DirectJDKLog#log:173|Initializing Spring embedded WebApplicationContext
+2020-05-05 22:25:03.460|main|INFO ||ServletWebServerApplicationContext#prepareWebApplicationContext:284|Root WebApplicationContext: initialization completed in 956 ms
+2020-05-05 22:25:03.516|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 22:25:03.517|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 22:25:03.521|main|INFO ||DynamicPropertyFactory#getInstance:281|DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@497aec8c
+2020-05-05 22:25:04.120|main|WARN ||URLConfigurationSource#<init>:121|No URLs will be polled as dynamic configuration sources.
+2020-05-05 22:25:04.121|main|INFO ||URLConfigurationSource#<init>:122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-05 22:25:04.274|main|INFO ||ExecutorConfigurationSupport#initialize:181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 22:25:04.837|main|WARN ||BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger#logWarning:86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-05 22:25:04.865|main|INFO ||EndpointLinksResolver#<init>:58|Exposing 3 endpoint(s) beneath base path ''
+2020-05-05 22:25:04.923|main|INFO ||InstanceInfoFactory#create:72|Setting initial instance status as: STARTING
+2020-05-05 22:25:04.950|main|INFO ||DiscoveryClient#<init>:368|Initializing Eureka in region us-east-1
+2020-05-05 22:25:05.298|main|INFO ||DiscoveryJerseyProvider#<init>:70|Using JSON encoding codec LegacyJacksonJson
+2020-05-05 22:25:05.299|main|INFO ||DiscoveryJerseyProvider#<init>:71|Using JSON decoding codec LegacyJacksonJson
+2020-05-05 22:25:05.399|main|INFO ||DiscoveryJerseyProvider#<init>:80|Using XML encoding codec XStreamXml
+2020-05-05 22:25:05.400|main|INFO ||DiscoveryJerseyProvider#<init>:81|Using XML decoding codec XStreamXml
+2020-05-05 22:25:05.539|main|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 22:25:05.677|main|INFO ||DiscoveryClient#fetchRegistry:981|Disable delta property : false
+2020-05-05 22:25:05.678|main|INFO ||DiscoveryClient#fetchRegistry:982|Single vip registry refresh property : null
+2020-05-05 22:25:05.678|main|INFO ||DiscoveryClient#fetchRegistry:983|Force full registry fetch : false
+2020-05-05 22:25:05.678|main|INFO ||DiscoveryClient#fetchRegistry:984|Application is null : false
+2020-05-05 22:25:05.678|main|INFO ||DiscoveryClient#fetchRegistry:985|Registered Applications size is zero : true
+2020-05-05 22:25:05.679|main|INFO ||DiscoveryClient#fetchRegistry:987|Application version is -1: true
+2020-05-05 22:25:05.679|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1070|Getting all instance registry info from the eureka server
+2020-05-05 22:25:05.885|main|INFO ||DiscoveryClient#getAndStoreFullRegistry:1079|The response status is 200
+2020-05-05 22:25:05.887|main|INFO ||DiscoveryClient#initScheduledTasks:1294|Starting heartbeat executor: renew interval is: 30
+2020-05-05 22:25:05.889|main|INFO ||InstanceInfoReplicator#<init>:60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-05 22:25:05.893|main|INFO ||DiscoveryClient#<init>:468|Discovery Client initialized at timestamp 1588688705892 with initial instances count: 4
+2020-05-05 22:25:05.894|main|INFO ||EurekaServiceRegistry#register:41|Registering application EUREKA-CONSUMER-LB with eureka with status UP
+2020-05-05 22:25:05.894|main|INFO ||DiscoveryClient$3#notify:1330|Saw local status change event StatusChangeEvent [timestamp=1588688705894, current=UP, previous=STARTING]
+2020-05-05 22:25:05.896|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090: registering service...
+2020-05-05 22:25:05.914|main|INFO ||DirectJDKLog#log:173|Starting ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:25:05.929|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - registration status: 204
+2020-05-05 22:25:05.938|main|INFO ||TomcatWebServer#start:204|Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-05 22:25:05.939|main|INFO ||EurekaAutoServiceRegistration#onApplicationEvent:145|Updating port to 9090
+2020-05-05 22:25:06.235|main|INFO ||StartupInfoLogger#logStarted:61|Started EurekaApplication in 4.852 seconds (JVM running for 5.596)
+2020-05-05 22:25:06.859|RMI TCP Connection(3)-127.0.0.1|INFO ||DirectJDKLog#log:173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-05 22:25:06.859|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:525|Initializing Servlet 'dispatcherServlet'
+2020-05-05 22:25:06.863|RMI TCP Connection(3)-127.0.0.1|INFO ||FrameworkServlet#initServletBean:547|Completed initialization in 4 ms
+2020-05-05 22:25:10.655|http-nio-9090-exec-1|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:10.658|http-nio-9090-exec-1|INFO ||ShutdownEnabledTimer#<init>:58|Shutdown hook installed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 22:25:10.660|http-nio-9090-exec-1|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:10.661|http-nio-9090-exec-1|INFO ||BaseLoadBalancer#initWithConfig:197|Client: eureka-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-05 22:25:10.667|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#enableAndInitLearnNewServersFeature:222|Using serverListUpdater PollingServerListUpdater
+2020-05-05 22:25:10.684|http-nio-9090-exec-1|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:10.686|http-nio-9090-exec-1|INFO ||DynamicServerListLoadBalancer#restOfInit:150|DynamicServerListLoadBalancer for client eureka-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=eureka-provider,current list of Servers=[192.168.1.126:8081, 192.168.1.127:8081],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.127:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.1.126:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2c788d7d
+2020-05-05 22:25:11.670|PollingServerListUpdater-0|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:11.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:25:41.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:26:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:26:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:26:11.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:26:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:26:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:26:41.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:27:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:27:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:27:11.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:27:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:27:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:27:41.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:28:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:28:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:28:11.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:28:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:28:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:28:41.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:29:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:29:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:29:11.671|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:29:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:29:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:29:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:30:05.694|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 22:30:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:30:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:30:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:30:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:30:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:30:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:31:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:31:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:31:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:31:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:31:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:31:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:32:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:32:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:32:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:32:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:32:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:32:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:33:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:33:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:33:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:33:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:33:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:33:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:34:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:34:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:34:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:34:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:34:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:34:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:35:05.708|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 22:35:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:35:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:35:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:35:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:35:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:35:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:36:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:36:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:36:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:36:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:36:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:36:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:37:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:37:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:37:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:37:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:37:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:37:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:38:10.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:38:10.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:38:11.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:38:40.660|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:38:40.684|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:38:41.674|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:39:10.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:39:10.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:39:11.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:39:40.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:39:40.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:39:41.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:40:05.723|AsyncResolver-bootstrap-executor-0|INFO ||ConfigClusterResolver#getClusterEndpoints:43|Resolving eureka endpoints via configuration
+2020-05-05 22:40:10.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:40:10.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:40:11.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:40:40.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:40:40.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:40:41.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:41:10.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:41:10.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:41:11.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:41:40.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:41:40.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:41:41.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:42:10.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:42:10.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:42:11.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:42:40.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:42:40.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:42:41.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:43:10.661|NFLoadBalancer-serverWeightTimer-eureka-provider|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:43:10.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:43:11.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:43:39.406|RMI TCP Connection(29)-127.0.0.1|INFO ||SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin#shutdown:159|Application shutdown requested.
+2020-05-05 22:43:39.407|RMI TCP Connection(29)-127.0.0.1|INFO ||EurekaServiceRegistry#deregister:65|Unregistering application EUREKA-CONSUMER-LB with eureka with status DOWN
+2020-05-05 22:43:39.407|RMI TCP Connection(29)-127.0.0.1|WARN ||DiscoveryClient$3#notify:1328|Saw local status change event StatusChangeEvent [timestamp=1588689819407, current=DOWN, previous=UP]
+2020-05-05 22:43:39.407|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:847|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090: registering service...
+2020-05-05 22:43:39.412|RMI TCP Connection(29)-127.0.0.1|INFO ||ExecutorConfigurationSupport#shutdown:218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 22:43:39.413|DiscoveryClient-InstanceInfoReplicator-0|INFO ||DiscoveryClient#register:856|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - registration status: 204
+2020-05-05 22:43:39.416|RMI TCP Connection(29)-127.0.0.1|INFO ||ShutdownEnabledTimer#cancel:67|Shutdown hook removed for: NFLoadBalancer-PingTimer-eureka-provider
+2020-05-05 22:43:39.418|RMI TCP Connection(29)-127.0.0.1|INFO ||WeightedResponseTimeRule#shutdown:149|Stopping NFLoadBalancer-serverWeightTimer-eureka-provider
+2020-05-05 22:43:39.421|RMI TCP Connection(29)-127.0.0.1|INFO ||DiscoveryClient#shutdown:909|Shutting down DiscoveryClient ...
+2020-05-05 22:43:40.685|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:43:41.675|NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone|INFO ||WeightedResponseTimeRule$ServerWeight#maintainWeights:248|Weight adjusting job started
+2020-05-05 22:43:42.423|RMI TCP Connection(29)-127.0.0.1|INFO ||DiscoveryClient#unregister:945|Unregistering ...
+2020-05-05 22:43:42.428|RMI TCP Connection(29)-127.0.0.1|INFO ||DiscoveryClient#unregister:947|DiscoveryClient_EUREKA-CONSUMER-LB/JPXUIPMY11S3CE7:eureka-consumer-lb:9090 - deregister  status: 200
+2020-05-05 22:43:42.440|RMI TCP Connection(29)-127.0.0.1|INFO ||DiscoveryClient#shutdown:934|Completed shut down of DiscoveryClient
+2020-05-05 22:43:42.441|RMI TCP Connection(29)-127.0.0.1|INFO ||DirectJDKLog#log:173|Pausing ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:43:42.580|RMI TCP Connection(29)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping service [Tomcat]
+2020-05-05 22:43:42.582|RMI TCP Connection(29)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-05-05 22:43:42.587|RMI TCP Connection(29)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1081)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:43:42.588|RMI TCP Connection(29)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:43:42.589|RMI TCP Connection(29)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+2020-05-05 22:43:42.590|RMI TCP Connection(29)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+2020-05-05 22:43:42.591|RMI TCP Connection(29)-127.0.0.1|WARN ||DirectJDKLog#log:173|The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-05-05 22:43:42.593|RMI TCP Connection(29)-127.0.0.1|INFO ||DirectJDKLog#log:173|Stopping ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:43:42.597|RMI TCP Connection(29)-127.0.0.1|INFO ||DirectJDKLog#log:173|Destroying ProtocolHandler ["http-nio-9090"]
+2020-05-05 22:43:42.598|Thread-25|INFO ||PollingServerListUpdater$LazyHolder$2#run:53|Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-05 22:43:42.598|Thread-27|INFO ||WeightedResponseTimeRule$2#run:140|Stopping NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone
+2020-05-05 22:43:42.598|Thread-24|INFO ||WeightedResponseTimeRule$2#run:140|Stopping NFLoadBalancer-serverWeightTimer-eureka-provider
+2020-05-05 22:43:42.598|Thread-29|INFO ||WeightedResponseTimeRule$2#run:140|Stopping NFLoadBalancer-serverWeightTimer-eureka-provider_defaultzone
+2020-05-05 22:43:42.598|Thread-20|INFO ||WeightedResponseTimeRule$2#run:140|Stopping NFLoadBalancer-serverWeightTimer-eureka-provider
