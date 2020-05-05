@@ -42,6 +42,7 @@
 	<module>06/coffeeliu-boot-lombok</module>
 	<module>06/coffeeliu-boot-async</module>
 	<module>09eureka</module>
+	<module>10ribbon</module>
 </modules>
 
 	<build>

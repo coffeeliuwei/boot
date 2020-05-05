@@ -31,3 +31,4 @@
 	  * [Eureka简介及快速搭建单服务](/09eureka/eurekaserver.md)
 	  * [Eureka原理及搭建服务集群](/09eureka/eurekacluster.md)
 	  * [Eureka服务生产者与消费者](/09eureka/eurekaP&C.md)
+	  * [VScode远程调试linux](/09eureka/vscode.md)

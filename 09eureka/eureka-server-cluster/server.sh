@@ -9,7 +9,7 @@ JAVA_MEM_OPTS=""
 SPRING_PROFILES_ACTIV="-Dspring.profiles.active=eureka1"
 #SPRING_PROFILES_ACTIV=""
 LOG_DIR=$CUR_SHELL_DIR/logs
-LOG_PATH=$LOG_DIR/${JAR_NAME%..log
+LOG_PATH=$LOG_DIR/${JAR_NAME%}.log
 echo_help()
 {
     echo -e "syntax: sh $CUR_SHELL_NAME start|stop"

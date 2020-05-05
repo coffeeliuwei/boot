@@ -20,5 +20,6 @@
   	<module>eureka-server</module>
   	<module>eureka-server-cluster</module>
   	<module>eureka-provider</module>
+  	<module>eureka-consumer</module>
   </modules>
 </project>
