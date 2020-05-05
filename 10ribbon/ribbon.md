@@ -165,7 +165,7 @@ eureka-provider.ribbon.listOfServers=192.168.1.127:8081
 ![运行结果](https://github.com/coffeeliuwei/boot/blob/master/img/66.jpg?raw=true)
 
 从运行结果和eureka管理界面发现pvp已经和192.168.1.127服务器上eureka-provider实现了直连。
-若eureka-provider.ribbon.listOfServers增加多个地址（以逗号隔开）则实现简单轮询服务。
+若eureka-provider.ribbon.listOfServers增加多个地址（以逗号隔开）则实现脱离eureka托管的简单轮询服务。
 
 
 
